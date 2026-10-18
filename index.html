@@ -1579,8 +1579,13 @@ h2{font-size:clamp(47px,10.2vw,72px)}
   amb.addEventListener('error',function(){btn.hidden=true;});
   btn.addEventListener('click',function(e){e.stopPropagation();quiere=amb.paused;try{localStorage.setItem('ambiente',quiere?'on':'off');}catch(err){} if(quiere){otros=0;sonar();}else callar();});
   // Arranca con la primera interacción (los navegadores no dejan sonar antes)
-  function primera(){ ['pointerdown','keydown','touchstart'].forEach(function(t){document.removeEventListener(t,primera,true);}); sonar(); }
-  ['pointerdown','keydown','touchstart'].forEach(function(t){document.addEventListener(t,primera,true);});
+  // Lo intenta en cada gesto (toque, deslizar, rueda, tecla) hasta que el navegador le deja sonar
+  var EV=['touchstart','touchend','pointerdown','pointerup','click','keydown','wheel','scroll'];
+  function quitar(){EV.forEach(function(t){window.removeEventListener(t,primera,true);document.removeEventListener(t,primera,true);});}
+  function primera(e){ if(!quiere){quitar();return;} if(e&&e.target&&e.target.closest&&e.target.closest('#ambiente')) return; if(!amb.paused||otros>0) return;
+    var pr=amb.play(); if(pr&&pr.then) pr.then(function(){quitar();fade(VOL,1800);pintar();}).catch(function(){}); }
+  EV.forEach(function(t){(t==='scroll'||t==='wheel'?window:document).addEventListener(t,primera,{capture:true,passive:true});});
+  amb.addEventListener('play',function(){quitar();});
   // Se para cuando suena cualquier otra muestra y vuelve cuando termina
   var playOrig=HTMLMediaElement.prototype.play;
   HTMLMediaElement.prototype.play=function(){
