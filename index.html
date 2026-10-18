@@ -1571,21 +1571,30 @@ h2{font-size:clamp(47px,10.2vw,72px)}
   var amb=new Audio('audio/ambiente.mp3'); amb.loop=true; amb.preload='auto'; amb.volume=0; amb.__ambiente=true;
   var VOL=0.22, quiere=true, otros=0, fadeT=null;
   try{ if(localStorage.getItem('ambiente')==='off') quiere=false; }catch(e){}
-  function pintar(){var on=!amb.paused;btn.classList.toggle('sonando',on);btn.setAttribute('aria-pressed',on);btn.querySelector('.estado').textContent=on?'On':'Off';}
+  function pintar(){var on=!amb.paused&&!amb.muted;btn.classList.toggle('sonando',on);btn.setAttribute('aria-pressed',on);btn.querySelector('.estado').textContent=on?'On':'Off';}
   function fade(to,ms,fin){clearInterval(fadeT);var from=amb.volume,t0=Date.now();fadeT=setInterval(function(){var k=Math.min(1,(Date.now()-t0)/ms);amb.volume=from+(to-from)*k;if(k>=1){clearInterval(fadeT);fin&&fin();}},40);}
   function sonar(){ if(!quiere||otros>0) return; var pr=amb.play(); if(pr&&pr.then) pr.then(function(){fade(VOL,1800);pintar();}).catch(function(){}); }
   function callar(){ fade(0,500,function(){amb.pause();pintar();}); }
   amb.addEventListener('canplaythrough',function(){btn.hidden=false;},{once:true});
   amb.addEventListener('error',function(){btn.hidden=true;});
-  btn.addEventListener('click',function(e){e.stopPropagation();quiere=amb.paused;try{localStorage.setItem('ambiente',quiere?'on':'off');}catch(err){} if(quiere){otros=0;sonar();}else callar();});
+  btn.addEventListener('click',function(e){e.stopPropagation();quiere=amb.paused||amb.muted;try{localStorage.setItem('ambiente',quiere?'on':'off');}catch(err){} if(quiere){otros=0;amb.muted=false;amb.volume=0;sonar();}else callar();});
   // Arranca con la primera interacción (los navegadores no dejan sonar antes)
-  // Lo intenta en cada gesto (toque, deslizar, rueda, tecla) hasta que el navegador le deja sonar
-  var EV=['touchstart','touchend','pointerdown','pointerup','click','keydown','wheel','scroll'];
-  function quitar(){EV.forEach(function(t){window.removeEventListener(t,primera,true);document.removeEventListener(t,primera,true);});}
-  function primera(e){ if(!quiere){quitar();return;} if(e&&e.target&&e.target.closest&&e.target.closest('#ambiente')) return; if(!amb.paused||otros>0) return;
-    var pr=amb.play(); if(pr&&pr.then) pr.then(function(){quitar();fade(VOL,1800);pintar();}).catch(function(){}); }
+  // Arranca en silencio nada más abrir (los móviles lo permiten) y se activa con el primer gesto:
+  // toque, deslizar, rueda o tecla. Si el navegador aún no lo deja, lo vuelve a intentar en el siguiente.
+  var EV=['touchstart','touchend','pointerdown','pointerup','click','keydown','wheel','scroll'],listo=false;
+  function quitar(){listo=true;EV.forEach(function(t){(t==='scroll'||t==='wheel'?window:document).removeEventListener(t,primera,true);});}
+  function exito(){quitar();amb.volume=0;fade(VOL,1800);pintar();}
+  function enSilencio(){ if(!quiere||otros>0) return; amb.muted=true; var pr=amb.play(); if(pr&&pr.catch) pr.catch(function(){}); }
+  function primera(e){
+    if(listo) return; if(!quiere){quitar();return;}
+    if(e&&e.target&&e.target.closest&&e.target.closest('#ambiente')) return;
+    if(otros>0) return;
+    if(!amb.paused&&amb.muted){ amb.volume=0; amb.muted=false;
+      setTimeout(function(){ if(listo) return; if(!amb.paused&&!amb.muted) exito(); else enSilencio(); },60); return; }
+    if(amb.paused){ amb.muted=false; var pr=amb.play(); if(pr&&pr.then) pr.then(exito).catch(function(){enSilencio();}); }
+  }
   EV.forEach(function(t){(t==='scroll'||t==='wheel'?window:document).addEventListener(t,primera,{capture:true,passive:true});});
-  amb.addEventListener('play',function(){quitar();});
+  if(quiere) enSilencio();
   // Se para cuando suena cualquier otra muestra y vuelve cuando termina
   var playOrig=HTMLMediaElement.prototype.play;
   HTMLMediaElement.prototype.play=function(){
