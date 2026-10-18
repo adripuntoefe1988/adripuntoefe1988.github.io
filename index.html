@@ -779,6 +779,25 @@ h2{font-size:clamp(47px,10.2vw,72px)}
 @media (max-width:900px){.clip-cover b{font-size:clamp(18px,4.2vw,26px)}}
 @media (max-width:560px){.clips{grid-template-columns:1fr!important;gap:22px}.clip{display:grid;grid-template-columns:1fr}.clip-img{width:100%}.clip-cover b{font-size:30px}}
 
+/* Pantalla de entrada */
+.entrada{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 60%,rgba(200,16,46,.28),transparent 60%),#0B0A0A;color:#F6F2F0;text-align:center;cursor:pointer;transition:opacity .7s ease,visibility .7s;-webkit-tap-highlight-color:transparent}
+.entrada.fuera{opacity:0;visibility:hidden;pointer-events:none}
+.entrada-caja{display:flex;flex-direction:column;align-items:center;gap:18px;max-width:560px}
+.entrada-rec{display:inline-flex;align-items:center;gap:8px;font:700 11px/1 Montserrat,sans-serif;letter-spacing:.3em;color:#C8102E;border:1px solid #C8102E;padding:7px 11px}
+.entrada-rec i{width:8px;height:8px;border-radius:50%;background:#C8102E;animation:entradaRec 1.4s ease-in-out infinite}
+@keyframes entradaRec{50%{opacity:.25}}
+.entrada-marca{font-family:Anton,Impact,sans-serif;font-size:clamp(40px,11vw,96px);line-height:.95;letter-spacing:.01em;margin:0}
+.entrada-sub{font:600 12px/1.4 Montserrat,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:#B9B0AE;margin:0}
+.entrada-boton{margin-top:14px;display:inline-flex;align-items:center;gap:12px;background:#C8102E;color:#fff;border:0;padding:18px 30px;font:800 14px/1 Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;box-shadow:0 0 0 0 rgba(200,16,46,.6);animation:entradaLatido 2.2s ease-out infinite}
+.entrada-boton:focus-visible{outline:2px solid #fff;outline-offset:4px}
+@keyframes entradaLatido{0%{box-shadow:0 0 0 0 rgba(200,16,46,.55)}70%,100%{box-shadow:0 0 0 22px rgba(200,16,46,0)}}
+.entrada-eq{display:inline-flex;gap:3px;align-items:flex-end;height:14px}
+.entrada-eq b{width:3px;height:100%;background:#fff;transform-origin:bottom;animation:vu .9s ease-in-out infinite alternate}
+.entrada-eq b:nth-child(2){animation-delay:-.3s}.entrada-eq b:nth-child(3){animation-delay:-.6s}
+.entrada-silencio{background:none;border:0;color:#B9B0AE;font:600 12px/1 Montserrat,sans-serif;letter-spacing:.12em;text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:10px}
+.entrada-silencio:hover{color:#fff}
+html.con-entrada,html.con-entrada body{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.entrada-boton,.entrada-rec i,.entrada-eq b{animation:none}}
 /* Música de ambiente */
 .ambiente{position:fixed;left:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:60;display:flex;align-items:center;gap:10px;padding:10px 14px 10px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(12,10,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--blanco);font:600 11px/1 var(--texto);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:border-color .2s,opacity .3s}
 .ambiente[hidden]{display:none}
@@ -1552,6 +1571,16 @@ h2{font-size:clamp(47px,10.2vw,72px)}
 </script>
 
 
+<div class="entrada" id="entrada" role="dialog" aria-modal="true" aria-labelledby="entrada-titulo">
+  <div class="entrada-caja">
+    <span class="entrada-rec"><i></i>REC</span>
+    <p class="entrada-marca" id="entrada-titulo">ADRIPUNTOEFE</p>
+    <p class="entrada-sub">Refuge Sound Record</p>
+    <button type="button" class="entrada-boton" id="entrada-boton"><span class="entrada-eq" aria-hidden="true"><b></b><b></b><b></b></span>Entra al templo</button>
+    <button type="button" class="entrada-silencio" id="entrada-silencio">Entrar sin sonido</button>
+  </div>
+</div>
+<script>try{if(sessionStorage.getItem('entrada')==='1'){document.getElementById('entrada').remove();}else{document.documentElement.classList.add('con-entrada');}}catch(e){document.documentElement.classList.add('con-entrada');}</script>
 <button type="button" class="ambiente" id="ambiente" hidden aria-pressed="false" aria-label="Música de ambiente"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="txt">Lofi del templo</span><span class="estado">Off</span></button>
 <script>
 (function(){
@@ -1587,7 +1616,7 @@ h2{font-size:clamp(47px,10.2vw,72px)}
   function enSilencio(){ if(!quiere||otros>0) return; amb.muted=true; var pr=amb.play(); if(pr&&pr.catch) pr.catch(function(){}); }
   function primera(e){
     if(listo) return; if(!quiere){quitar();return;}
-    if(e&&e.target&&e.target.closest&&e.target.closest('#ambiente')) return;
+    if(e&&e.target&&e.target.closest&&e.target.closest('#ambiente,#entrada')) return;
     if(otros>0) return;
     if(!amb.paused&&amb.muted){ amb.volume=0; amb.muted=false;
       setTimeout(function(){ if(listo) return; if(!amb.paused&&!amb.muted) exito(); else enSilencio(); },60); return; }
@@ -1595,6 +1624,23 @@ h2{font-size:clamp(47px,10.2vw,72px)}
   }
   EV.forEach(function(t){(t==='scroll'||t==='wheel'?window:document).addEventListener(t,primera,{capture:true,passive:true});});
   if(quiere) enSilencio();
+  // Pantalla de entrada: el toque que la quita es el que enciende la música
+  var ent=document.getElementById('entrada');
+  if(ent){
+    var bE=document.getElementById('entrada-boton'),bS=document.getElementById('entrada-silencio');
+    var entrar=function(conSonido){
+      if(ent.classList.contains('fuera')) return;
+      try{sessionStorage.setItem('entrada','1');}catch(e){}
+      if(conSonido){ quiere=true; try{localStorage.setItem('ambiente','on');}catch(e){} otros=0; amb.muted=false; amb.volume=0;
+        var pr=amb.play(); if(pr&&pr.then) pr.then(exito).catch(function(){}); else exito(); }
+      else { quiere=false; amb.pause(); amb.muted=false; pintar(); quitar(); }
+      ent.classList.add('fuera'); document.documentElement.classList.remove('con-entrada');
+      setTimeout(function(){ent.remove();},800);
+    };
+    bS.addEventListener('click',function(e){e.stopPropagation();entrar(false);});
+    ent.addEventListener('click',function(){entrar(true);});
+    document.addEventListener('keydown',function(e){ if(!document.body.contains(ent)) return; if(e.key==='Escape') entrar(false); else if(e.key==='Enter'&&!e.target.closest('#entrada-silencio')){e.preventDefault();entrar(true);} });
+  }
   // Se para cuando suena cualquier otra muestra y vuelve cuando termina
   var playOrig=HTMLMediaElement.prototype.play;
   HTMLMediaElement.prototype.play=function(){
