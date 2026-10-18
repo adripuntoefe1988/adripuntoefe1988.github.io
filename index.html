@@ -727,9 +727,9 @@ h2{font-size:clamp(47px,10.2vw,72px)}
 .caminos-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(9px,1.3vw,16px)}
 .camino{position:relative;isolation:isolate;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;min-height:clamp(355px,31vw,420px);padding:clamp(23px,3vw,35px);border:1px solid rgba(255,255,255,.15);background:#1d1318;transition:transform .25s,border-color .25s,box-shadow .25s}
 .camino::before{content:'';position:absolute;inset:0;z-index:-2;background-position:center;background-size:cover;transition:transform .6s,filter .35s;filter:saturate(.78) contrast(1.08)}
-.camino-uno::before{background-image:url('img/s-contacto.webp');background-position:56% center}
-.camino-dos::before{background-image:url('img/s-mesa.webp');background-position:50% center}
-.camino-tres::before{background-image:url('img/s-produciendo.webp');background-position:47% center}
+.camino-uno::before{background-image:url('img/c-cabina.webp');background-position:50% 35%}
+.camino-dos::before{background-image:url('img/c-proyecto.webp');background-position:50% center}
+.camino-tres::before{background-image:url('img/c-camino.webp');background-position:50% 25%}
 .camino::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,8,9,.45),rgba(10,8,9,.05) 25%,rgba(9,5,7,.90) 74%,#0B0709),linear-gradient(120deg,rgba(116,13,41,.16),transparent 65%)}
 .camino-arriba{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.18em;font-weight:800;color:#FFF0F1}
 .camino-arriba b{font:400 29px/1 var(--display);color:#FF355C}
@@ -778,6 +778,18 @@ h2{font-size:clamp(47px,10.2vw,72px)}
 /* Ajustes finales V6 */
 @media (max-width:900px){.clip-cover b{font-size:clamp(18px,4.2vw,26px)}}
 @media (max-width:560px){.clips{grid-template-columns:1fr!important;gap:22px}.clip{display:grid;grid-template-columns:1fr}.clip-img{width:100%}.clip-cover b{font-size:30px}}
+
+/* Música de ambiente */
+.ambiente{position:fixed;left:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:60;display:flex;align-items:center;gap:10px;padding:10px 14px 10px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(12,10,11,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--blanco);font:600 11px/1 var(--texto);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:border-color .2s,opacity .3s}
+.ambiente[hidden]{display:none}
+.ambiente:hover{border-color:var(--fuego)}
+.ambiente .eq{display:flex;align-items:flex-end;gap:2px;height:14px}
+.ambiente .eq i{width:3px;height:30%;background:var(--gris);border-radius:1px}
+.ambiente.sonando .eq i{background:var(--verde);animation:vu 1s ease-in-out infinite alternate}
+.ambiente.sonando .eq i:nth-child(2){animation-delay:-.4s}.ambiente.sonando .eq i:nth-child(3){animation-delay:-.7s}
+.ambiente .estado{color:var(--gris)}
+.ambiente.sonando .estado{color:var(--verde)}
+@media (max-width:600px){.ambiente .txt{display:none}}
 </style>
 </head>
 <body>
@@ -1390,7 +1402,7 @@ h2{font-size:clamp(47px,10.2vw,72px)}
         <li><a href="https://adripuntoefe1988.github.io/beats/" target="_blank" rel="noopener">Catálogo de beats</a></li>
       </ul>
     </div>
-    <p class="legal">© ADRI PUNTO F PRODUCCIONES · Refuge Sound Record</p>
+    <p class="legal">© ADRI PUNTO EFE PRODUCCIONES · Refuge Sound Record</p>
   </div>
 </footer>
 
@@ -1538,6 +1550,7 @@ h2{font-size:clamp(47px,10.2vw,72px)}
 </script>
 
 
+<button type="button" class="ambiente" id="ambiente" hidden aria-pressed="false" aria-label="Música de ambiente"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="txt">Lofi del templo</span><span class="estado">Off</span></button>
 <script>
 (function(){
  const nav=document.getElementById('navegacion'), toggle=nav?.querySelector('.menu-toggle'), menu=document.getElementById('nav-links');
@@ -1548,6 +1561,40 @@ h2{font-size:clamp(47px,10.2vw,72px)}
  document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
  document.addEventListener('click',e=>{if(!nav.contains(e.target))close()});
  window.matchMedia('(min-width: 901px)').addEventListener('change',close);
+})();
+</script>
+<script>
+(function(){
+  var btn=document.getElementById('ambiente'); if(!btn) return;
+  var amb=new Audio('audio/ambiente.mp3'); amb.loop=true; amb.preload='auto'; amb.volume=0; amb.__ambiente=true;
+  var VOL=0.22, quiere=true, otros=0, fadeT=null;
+  try{ if(localStorage.getItem('ambiente')==='off') quiere=false; }catch(e){}
+  function pintar(){var on=!amb.paused;btn.classList.toggle('sonando',on);btn.setAttribute('aria-pressed',on);btn.querySelector('.estado').textContent=on?'On':'Off';}
+  function fade(to,ms,fin){clearInterval(fadeT);var from=amb.volume,t0=Date.now();fadeT=setInterval(function(){var k=Math.min(1,(Date.now()-t0)/ms);amb.volume=from+(to-from)*k;if(k>=1){clearInterval(fadeT);fin&&fin();}},40);}
+  function sonar(){ if(!quiere||otros>0) return; var pr=amb.play(); if(pr&&pr.then) pr.then(function(){fade(VOL,1800);pintar();}).catch(function(){}); }
+  function callar(){ fade(0,500,function(){amb.pause();pintar();}); }
+  amb.addEventListener('canplaythrough',function(){btn.hidden=false;},{once:true});
+  amb.addEventListener('error',function(){btn.hidden=true;});
+  btn.addEventListener('click',function(e){e.stopPropagation();quiere=amb.paused;try{localStorage.setItem('ambiente',quiere?'on':'off');}catch(err){} if(quiere){otros=0;sonar();}else callar();});
+  // Arranca con la primera interacción (los navegadores no dejan sonar antes)
+  function primera(){ ['pointerdown','keydown','touchstart'].forEach(function(t){document.removeEventListener(t,primera,true);}); sonar(); }
+  ['pointerdown','keydown','touchstart'].forEach(function(t){document.addEventListener(t,primera,true);});
+  // Se para cuando suena cualquier otra muestra y vuelve cuando termina
+  var playOrig=HTMLMediaElement.prototype.play;
+  HTMLMediaElement.prototype.play=function(){
+    var el=this;
+    if(!el.__ambiente && !el.muted && !el.__vigilado){
+      el.__vigilado=true;
+      var fin=function(){ if(el.__activo){el.__activo=false;otros=Math.max(0,otros-1);setTimeout(function(){ if(otros===0) sonar(); },400);} };
+      el.addEventListener('pause',fin); el.addEventListener('ended',fin);
+      el.addEventListener('playing',function(){ if(!el.muted && !el.__activo){el.__activo=true;otros++;callar();} });
+      el.addEventListener('volumechange',function(){ if(el.muted&&el.__activo){fin();} else if(!el.muted&&!el.paused&&!el.__activo){el.__activo=true;otros++;callar();} });
+    }
+    return playOrig.apply(el,arguments);
+  };
+  // Videoclips de YouTube: se para al abrir uno
+  document.addEventListener('click',function(e){ if(e.target.closest&&e.target.closest('.clip')){ otros++; callar(); } },true);
+  document.addEventListener('visibilitychange',function(){ if(document.hidden&&!amb.paused){amb.pause();pintar();amb.__oculto=true;} else if(!document.hidden&&amb.__oculto){amb.__oculto=false;sonar();} });
 })();
 </script>
 </body>
