@@ -818,6 +818,12 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
 .cinta-wrap::before,.cinta-wrap::after{content:'';position:absolute;top:0;bottom:0;width:4%;z-index:1;pointer-events:none}
 .cinta-wrap::before{left:0;background:linear-gradient(90deg,var(--templo),transparent)}
 .cinta-wrap::after{right:0;background:linear-gradient(270deg,var(--templo),transparent)}
+.google .nota small{display:block}
+.verificadas{display:inline-flex;gap:5px;margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--gris);text-decoration:underline;text-underline-offset:3px}
+.verificadas:hover{color:var(--blanco)}
+.visor-fig .visor-cta{flex:none}
+.visor-fig .visor-cta[hidden]{display:none}
+.visor-fig:has(.visor-cta:not([hidden])) img{max-height:calc(100% - 100px)}
 </style>
 </head>
 <body>
@@ -1087,8 +1093,8 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
       </figure>
     </div>
     <div class="google">
-      <div class="nota"><strong>4,9</strong><div><span class="estrellas">★★★★★</span><small>Valoración de Refuge Sound Record en Google</small></div></div>
-      <a class="btn fantasma" href="https://www.google.com/maps?cid=7348037294644583722" target="_blank" rel="noopener">Leer las reseñas</a>
+      <div class="nota"><strong>4,9</strong><div><span class="estrellas">★★★★★</span><small>Valoración de Refuge Sound Record en Google</small><a class="verificadas" href="https://www.google.com/maps?cid=7348037294644583722" target="_blank" rel="noopener">Verificadas en Google <span aria-hidden="true">↗</span></a></div></div>
+      <button type="button" class="btn fantasma" id="leer-resenas">Leer las reseñas</button>
     </div>
     <div class="cinta-wrap">
       <button type="button" class="cinta-btn prev" aria-label="Reseñas anteriores">‹</button>
@@ -1145,7 +1151,7 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
     <div class="visor" id="visor" hidden role="dialog" aria-modal="true" aria-label="Reseña completa">
       <button type="button" class="visor-cerrar" aria-label="Cerrar">×</button>
       <button type="button" class="visor-nav prev" aria-label="Reseña anterior">‹</button>
-      <figure class="visor-fig"><img decoding="async" id="visor-img" src="" alt=""><figcaption id="visor-num"></figcaption></figure>
+      <figure class="visor-fig"><img decoding="async" id="visor-img" src="" alt=""><figcaption id="visor-num"></figcaption><a class="btn visor-cta" id="visor-cta" href="#contacto" hidden>Cuéntame tu idea</a></figure>
       <button type="button" class="visor-nav next" aria-label="Reseña siguiente">›</button>
     </div>
   </div>
@@ -1505,14 +1511,16 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
     window.addEventListener('pointerup',function(){arrastre=null;});
     document.querySelectorAll('.cinta-btn').forEach(function(b){b.addEventListener('click',function(){parar();var w=cinta.firstElementChild.getBoundingClientRect().width+14;cinta.scrollBy({left:(b.classList.contains('next')?1:-1)*w*2,behavior:'smooth'});seguir(4000);});});
     // Visor a pantalla completa
-    var visor=document.getElementById('visor'),vImg=document.getElementById('visor-img'),vNum=document.getElementById('visor-num');
+    var visor=document.getElementById('visor'),vImg=document.getElementById('visor-img'),vNum=document.getElementById('visor-num'),vCta=document.getElementById('visor-cta');
     var lista=orig.map(function(b){return {src:b.dataset.full,alt:b.querySelector('img').alt};}),actual=0,ultimoFoco=null;
-    function mostrar(i){actual=(i+lista.length)%lista.length;vImg.src=lista[actual].src;vImg.alt=lista[actual].alt;vNum.textContent=(actual+1)+' / '+lista.length;
+    function mostrar(i){actual=(i+lista.length)%lista.length;vImg.src=lista[actual].src;vImg.alt=lista[actual].alt;vNum.textContent=(actual+1)+' / '+lista.length;vCta.hidden=!(lista===resLista&&actual===lista.length-1);
       [actual+1,actual-1].forEach(function(j){var p=new Image();p.src=lista[(j+lista.length)%lista.length].src;});}
     function abrir(i){ultimoFoco=document.activeElement;parar();mostrar(i);visor.hidden=false;document.body.style.overflow='hidden';visor.querySelector('.visor-cerrar').focus();}
     function cerrar(){visor.hidden=true;document.body.style.overflow='';seguir(1500);if(ultimoFoco)ultimoFoco.focus();}
     var resLista=lista;
     cinta.addEventListener('click',function(e){var b=e.target.closest('.resena');if(!b||movido>8)return;lista=resLista;abrir(+b.dataset.i);});
+    var leer=document.getElementById('leer-resenas');if(leer)leer.addEventListener('click',function(){lista=resLista;abrir(0);});
+    vCta.addEventListener('click',function(){cerrar();});
     var galFigs=Array.prototype.slice.call(document.querySelectorAll('.galeria figure'));
     var galLista=galFigs.map(function(f){var im=f.querySelector('img');return {src:im.getAttribute('src'),alt:im.alt};});
     galFigs.forEach(function(f,i){f.tabIndex=0;f.setAttribute('role','button');f.setAttribute('aria-label','Ampliar foto: '+galLista[i].alt);
