@@ -1,19 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AdriPuntoEfe · Refuge Sound Record</title>
-<meta property="og:title" content="AdriPuntoEfe · Refuge Sound Record">
-<meta property="og:description" content="Saca lo que llevas dentro. Que suene como tiene que sonar. Grabación, producción, mezcla y master en Zaragoza.">
-<meta property="og:image" content="img/s-hero.webp">
-<meta property="og:type" content="website">
-<link rel="preload" as="image" href="img/s-hero.webp">
-<meta name="description" content="Refuge Sound Record · Estudio de grabación, producción, mezcla y mastering en Zaragoza con AdriPuntoEfe. Canciones, EP, discos y acompañamiento artístico a medida. Saca lo que llevas dentro.">
-<meta name="theme-color" content="#0E0E0E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Estudio de grabación en Zaragoza | AdriPuntoEfe · Refuge Sound</title>
+<meta content="Estudio de grabación en Zaragoza | AdriPuntoEfe · Refuge Sound" property="og:title"/>
+<meta content="Saca lo que llevas dentro. Que suene como tiene que sonar. Grabación de voces, mezcla y mastering en Alfajarín, cerca de Zaragoza. Tu canción, tu sonido." property="og:description"/>
+<meta content="img/s-hero.webp" property="og:image"/>
+<!-- Publicación: sustituir og:image por la URL HTTPS absoluta de la imagen y añadir canonical con el dominio real. -->
+<meta content="es_ES" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="website" property="og:type"/>
+<link as="image" href="img/s-hero.webp" rel="preload"/>
+<meta content="Refuge Sound RECord, estudio de grabación en Alfajarín, junto a Zaragoza. Graba tus canciones con AdriPuntoEfe: voces, mezcla, mastering y proyectos musicales." name="description"/>
+<meta content="#0E0E0E" name="theme-color"/>
+<link href="img/favicon-refuge.svg" rel="icon" type="image/svg+xml"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Refuge Sound RECord","description":"Estudio de grabación de voces, mezcla, mastering y producción musical con AdriPuntoEfe.","telephone":"+34 657 135 322","address":{"@type":"PostalAddress","addressLocality":"Alfajarín","addressRegion":"Zaragoza","addressCountry":"ES"},"areaServed":{"@type":"Place","name":"Zaragoza y alrededores"}}</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <style>
 /* Layout: el templo de noche. Fondo negro con grano, titulares Anton enormes en blanco/rojo,
    el REC rojo como firma y el verde solo cuando algo "suena" o está listo. */
@@ -824,11 +830,35 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
 .visor-fig .visor-cta{flex:none}
 .visor-fig .visor-cta[hidden]{display:none}
 .visor-fig:has(.visor-cta:not([hidden])) img{max-height:calc(100% - 100px)}
+
+/* Mejoras de conversión sin cambiar el universo visual */
+.pack-tipo{display:block;font-size:12px;line-height:1.5;font-weight:700;letter-spacing:.14em;color:#E9BAC4;text-transform:uppercase;margin-top:-6px}
+.pack .pack-cta{display:grid;gap:9px;align-self:end;margin-top:8px}
+.pack .pack-cta .btn{margin:0;min-height:52px;display:flex;align-items:center;text-align:center}
+.pack .pack-cta .alternativa{font-size:13px;color:#C8BFC1;text-align:center;text-underline-offset:3px;text-decoration-thickness:1px;padding:4px;transition:color .2s}
+.pack .pack-cta .alternativa:hover{color:#fff}
+.pack .pack-cta .microcopy{font-size:12px;line-height:1.5;color:#B5A7AA;text-align:center}
+.pack .desc p+ p{margin-top:10px}
+.pack .verbo{margin-bottom:2px;font-size:clamp(48px,4.65vw,65px)}
+.pack-seguimiento{margin-top:28px;padding:clamp(22px,3vw,34px);border:1px solid rgba(232,52,79,.4);background:linear-gradient(105deg,rgba(200,16,46,.18),rgba(23,21,22,.4));display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:24px}
+.pack-seguimiento h3{font-family:var(--display);font-weight:400;line-height:1.05;font-size:clamp(28px,3vw,42px);margin:0 0 12px}
+.pack-seguimiento p{font-size:14px;color:#CEBFC2;margin:0}
+.pack-seguimiento a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px;justify-self:end}
+.caminos-cta{margin-top:22px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.caminos-cta p{margin:0;font-size:14px;color:#BCAFB2}
+.caminos-cta .btn{white-space:normal}
+.contacto-directo{background:linear-gradient(90deg,rgba(200,16,46,.15),rgba(23,21,22,.4));border:1px solid rgba(200,16,46,.4);padding:clamp(22px,3vw,32px);margin-bottom:30px;display:flex;justify-content:space-between;align-items:center;gap:22px}
+.contacto-directo h3{font:400 clamp(26px,3vw,38px)/1.07 var(--display);margin:0 0 8px}
+.contacto-directo p{font-size:14px;color:#D0C0C3;margin:0;max-width:52ch}
+.contacto-directo .btn{white-space:nowrap;flex-shrink:0}
+.lugar-nota{border-left:3px solid var(--fuego);padding:8px 0 8px 18px;margin-top:24px;color:#D2C7C9;font-size:14px;line-height:1.7}
+.lugar-nota strong{color:#fff}
+@media(max-width:760px){.pack-seguimiento{grid-template-columns:1fr}.pack-seguimiento a{justify-self:start}.contacto-directo{flex-direction:column;align-items:flex-start}.contacto-directo .btn{width:100%;justify-content:center}.caminos-cta{align-items:stretch;flex-direction:column}.caminos-cta .btn{justify-content:center;text-align:center}}
+.pack{display:flex;flex-direction:column;gap:16px}
+.pack .pack-cta{margin-top:auto;padding-top:8px}
 </style>
 </head>
 <body>
-
-
 <nav class="nav" aria-label="Principal" id="navegacion">
   <div class="wrap">
     <a class="marca" href="#inicio" aria-label="AdriPuntoEfe, volver al inicio">AdriPuntoEfe <span class="rec"><i></i>REC</span></a>
@@ -844,602 +874,617 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
     <a class="btn" href="#contacto">🎙 <span>Cuéntame tu idea</span></a>
   </div>
 </nav>
-
 <header class="hero" id="inicio">
-  <div class="hero-foto" role="img" aria-label="Adri con cascos en el estudio, iluminado en rojo"></div>
-  <div class="wrap">
-    <p class="eyebrow">Artista y productor · Refuge Sound Record</p>
-    <h1><span>Saca lo que</span><span>llevas dentro.</span><span class="rojo">Que suene como tiene que sonar.</span></h1>
-    <p class="lead">Soy Adri. Desde 2012 grabo, mezclo y masterizo a artistas que tienen algo que contar y quieren apostar por ello. <strong>Trato cada tema como si fuera mío</strong>, y sales del estudio con una canción de la que sentirte orgulloso y sabiendo más que cuando entraste.</p>
-    <div class="acciones">
-      <a class="btn" href="#contacto">Cuéntame tu idea →</a>
-      <a class="btn fantasma" href="#antes-despues">Escucha el antes y después</a>
-    </div>
-    <div class="suena"><span class="medidor" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></span> Rap · Música urbana · Voz</div>
-  </div>
+<div aria-label="Adri con cascos en el estudio, iluminado en rojo" class="hero-foto" role="img"></div>
+<div class="wrap">
+<p class="eyebrow">Artista y productor · Refuge Sound Record</p>
+<h1><span>Saca lo que</span><span>llevas dentro.</span><span class="rojo">Que suene como tiene que sonar.</span></h1>
+<p class="lead">Soy Adri. Desde 2012 grabo, mezclo y masterizo a artistas que tienen algo que contar, ya sea su primera canción o su próximo proyecto. <strong>Trato cada tema como si fuera mío</strong>, y sales del estudio con una canción de la que sentirte orgulloso y sabiendo más que cuando entraste.</p>
+<div class="acciones">
+<a class="btn" href="#packs">Descubre cómo grabamos →</a>
+<a class="btn fantasma" href="#antes-despues">Escucha el antes y después</a>
+</div>
+<div class="suena"><span aria-hidden="true" class="medidor"><b></b><b></b><b></b><b></b><b></b></span> Rap · Música urbana · Voz</div>
+</div>
 </header>
-
-<div class="disciplina" aria-label="Servicios del estudio"><div class="wrap"><span><i>01</i> Producción musical</span><span><i>02</i> Grabación</span><span><i>03</i> Mezcla</span><span><i>04</i> Mastering</span></div></div>
-
-<section class="cifras" aria-label="Trayectoria">
-  <div class="wrap">
-    <ul>
-      <li><strong>2012</strong><span>grabando artistas</span></li>
-      <li><strong>+1800</strong><span>temas grabados</span></li>
-      <li><strong>+10.000 h</strong><span>de estudio</span></li>
-      <li><strong>4,9 ★</strong><span>en Google</span></li>
-    </ul>
-  </div>
+<div aria-label="Servicios del estudio" class="disciplina"><div class="wrap"><span><i>01</i> Producción musical</span><span><i>02</i> Grabación</span><span><i>03</i> Mezcla</span><span><i>04</i> Mastering</span></div></div>
+<section aria-label="Trayectoria" class="cifras">
+<div class="wrap">
+<ul>
+<li><strong>2012</strong><span>grabando artistas</span></li>
+<li><strong>+1800</strong><span>temas grabados</span></li>
+<li><strong>+10.000 h</strong><span>de estudio</span></li>
+<li><strong>4,9 ★</strong><span>en Google</span></li>
+</ul>
+</div>
 </section>
 
-<section class="caminos" id="empieza" aria-labelledby="caminos-t">
-  <div class="wrap">
-    <div class="caminos-titular">
-      <div><p class="eyebrow">00 / Empieza por aquí</p><h2 id="caminos-t">Dime dónde estás.<br><span class="rojo">Hacemos que suene.</span></h2></div>
-      <p>No hace falta que sepas de técnica ni que lo tengas todo resuelto. Hay una forma de trabajar contigo, tanto si vienes con una letra como si estás construyendo un proyecto entero.</p>
-    </div>
-    <div class="caminos-grid">
-      <a class="camino camino-uno" href="#pack-tema" data-interes="Grabar un tema (Paso por el Templo)">
-        <span class="camino-arriba"><b>01</b><i>UNA CANCIÓN</i></span>
-        <span class="camino-abajo"><strong>Tengo un tema<br>en la cabeza.</strong><span>Grabación, producción y sonido profesional <b aria-hidden="true">↗</b></span></span>
-      </a>
-      <a class="camino camino-dos" href="#pack-disco" data-interes="Un EP o disco (Residencia en el Templo)">
-        <span class="camino-arriba"><b>02</b><i>UN PROYECTO</i></span>
-        <span class="camino-abajo"><strong>Quiero crear algo<br>más grande.</strong><span>EP, disco y una visión musical de principio a fin <b aria-hidden="true">↗</b></span></span>
-      </a>
-      <a class="camino camino-tres" href="#desarrollo-artistico" data-interes="Mentoría para artistas">
-        <span class="camino-arriba"><b>03</b><i>MI CAMINO</i></span>
-        <span class="camino-abajo"><strong>Quiero dar rumbo<br>a mi música.</strong><span>Mentoría, identidad y preparación de lanzamientos <b aria-hidden="true">↗</b></span></span>
-      </a>
-    </div>
-    <p class="caminos-pie">¿Solo necesitas mezcla, mastering, un beat o una grabación puntual? <a href="#servicios-puntuales">Mira los servicios a medida <span aria-hidden="true">↗</span></a></p>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section aria-labelledby="caminos-t" class="caminos" id="empieza">
+<div class="wrap">
+<div class="caminos-titular">
+<div><p class="eyebrow">00 / Empieza por aquí</p><h2 id="caminos-t">Dime dónde estás.<br/><span class="rojo">Hacemos que suene.</span></h2></div>
+<p>No hace falta que sepas de técnica ni que lo tengas todo resuelto. Hay una forma de trabajar contigo, tanto si vienes con una letra como si estás construyendo un proyecto entero.</p>
+</div>
+<div class="caminos-grid">
+<a class="camino camino-uno" data-interes="Grabar un tema (Paso por el Templo)" href="#pack-tema">
+<span class="camino-arriba"><b>01</b><i>UNA CANCIÓN</i></span>
+<span class="camino-abajo"><strong>Tengo un tema<br/>en la cabeza.</strong><span>Grabación de voces, mezcla y mastering con tu instrumental <b aria-hidden="true">↗</b></span></span>
+</a>
+<a class="camino camino-dos" data-interes="Un EP o disco (Residencia en el Templo)" href="#pack-disco">
+<span class="camino-arriba"><b>02</b><i>UN PROYECTO</i></span>
+<span class="camino-abajo"><strong>Quiero crear algo<br/>más grande.</strong><span>EP, disco y una visión musical de principio a fin <b aria-hidden="true">↗</b></span></span>
+</a>
+<a class="camino camino-tres" data-interes="Mentoría para artistas" href="#desarrollo-artistico">
+<span class="camino-arriba"><b>03</b><i>MI CAMINO</i></span>
+<span class="camino-abajo"><strong>Quiero dar rumbo<br/>a mi música.</strong><span>Mentoría, identidad y preparación de lanzamientos <b aria-hidden="true">↗</b></span></span>
+</a>
+</div>
+<p class="caminos-pie">¿Solo necesitas mezcla, mastering, un beat o una grabación puntual? <a href="#servicios-puntuales">Mira los servicios a medida <span aria-hidden="true">↗</span></a></p>
+<div class="caminos-cta"><p>¿Ya tienes tu instrumental y quieres grabar? No hace falta rellenar ningún formulario.</p><a class="btn" data-contacto="atajo-cancion" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri%21%20He%20visto%20el%20pack%20Paso%20por%20el%20Templo%20en%20tu%20web.%20Quiero%20grabar%20una%20canci%C3%B3n%20y%20ya%20tengo%20la%20instrumental.%20%C2%BFMe%20cuentas%20c%C3%B3mo%20funciona%20y%20qu%C3%A9%20disponibilidad%20tienes%3F" rel="noopener noreferrer" target="_blank">Preguntar disponibilidad por WhatsApp ↗</a></div>
+</div>
 </section>
 
 <section id="quien">
-<div class="wrap"><div class="capitulo" aria-hidden="true">01 / LA HISTORIA</div></div>
-  <div class="wrap quien">
-    <figure class="retrato"><img decoding="async" src="img/s-retrato.webp" alt="Adri en el sofá del estudio con gorra de Zaragoza" width="1000" height="1250"></figure>
-    <div>
-      <div class="cabecera">
-        <p class="eyebrow">Quién soy</p>
-        <h2>La música me dio un rumbo. <span class="rojo">Ahora te ayudo a encontrar el tuyo.</span></h2>
-      </div>
-      <div class="cuerpo">
-        <p>Era un chaval bastante perdido que se pasaba seis horas al día escuchando rap. La música me acompañó en los momentos difíciles y, cuando empecé a escribir mis propias canciones, descubrí que podía sacar todo lo que llevaba dentro.</p>
-        <p>Empecé desde cero y por mi cuenta: <strong>aprendí a producir para tener mis propios beats y aprendí sonido para sonar bien.</strong> Grababa en mi cuarto y los artistas llegaron solos, sin anuncios, por los resultados. Después levanté Refuge con mis manos, en cuatro meses de obras.</p>
-        <p>Sigo siendo aquel chaval que se emociona con una canción y sigo sacando temas como artista, así que conozco los dos lados del cristal. También enseño producción musical y, con mi asociación, llevo talleres de rap con conciencia a jóvenes. <strong>Si vienes con actitud, te acompaño</strong>, empieces hoy o lleves años.</p>
-        <p class="firma">AdriPuntoEfe</p>
-        <div class="ig-botones"><a class="btn ig" href="https://www.instagram.com/adripuntoefe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>@adripuntoefe</a><a class="btn ig" href="https://www.instagram.com/refugesound/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>@refugesound</a></div>
-      </div>
-    </div>
-  </div>
+<div class="wrap"><div aria-hidden="true" class="capitulo">01 / LA HISTORIA</div></div>
+<div class="wrap quien">
+<figure class="retrato"><img alt="Adri en el sofá del estudio con gorra de Zaragoza" decoding="async" height="1250" src="img/s-retrato.webp" width="1000"/></figure>
+<div>
+<div class="cabecera">
+<p class="eyebrow">Quién soy</p>
+<h2>La música me dio un rumbo. <span class="rojo">Ahora te ayudo a encontrar el tuyo.</span></h2>
+</div>
+<div class="cuerpo">
+<p>Era un chaval bastante perdido que se pasaba seis horas al día escuchando rap. La música me acompañó en los momentos difíciles y, cuando empecé a escribir mis propias canciones, descubrí que podía sacar todo lo que llevaba dentro.</p>
+<p>Empecé desde cero y por mi cuenta: <strong>aprendí a producir para tener mis propios beats y aprendí sonido para sonar bien.</strong> Grababa en mi cuarto y los artistas llegaron solos, sin anuncios, por los resultados. Después levanté Refuge con mis manos, en cuatro meses de obras.</p>
+<p>Sigo siendo aquel chaval que se emociona con una canción y sigo sacando temas como artista, así que conozco los dos lados del cristal. También enseño producción musical y, con mi asociación, llevo talleres de rap con conciencia a jóvenes. <strong>Si vienes con actitud, te acompaño</strong>, empieces hoy o lleves años.</p>
+<p class="firma">AdriPuntoEfe</p>
+<div class="ig-botones"><a class="btn ig" href="https://www.instagram.com/adripuntoefe/" rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"></path></svg>@adripuntoefe</a><a class="btn ig" href="https://www.instagram.com/refugesound/" rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"></path></svg>@refugesound</a></div>
+</div>
+</div>
+</div>
 </section>
 
-<section class="manifiesto" id="manifiesto" aria-label="Manifiesto">
-<div class="wrap"><div class="capitulo" aria-hidden="true">02 / LA FILOSOFÍA</div></div>
-  <div class="wrap manifiesto-grid">
-    <div class="manifiesto-texto">
-    <p class="eyebrow eyebrow-claro">Manifiesto</p>
-    <blockquote>No dejes de <span>ser tú.</span></blockquote>
-    <div class="manifiesto-cuerpo">
-      <p>De pequeños creamos sin pedir permiso. Después crecemos, empezamos a preocuparnos por lo que pensarán los demás y poco a poco silenciamos a ese niño rebelde que solo quería expresarse.</p>
-      <p>Pero el éxito no tiene una única forma. Puedes soñar con llenar estadios o simplemente querer terminar esa canción que llevas tanto tiempo imaginando. <strong>Lo importante es que lo que hagas te represente.</strong></p>
-    </div>
-    <details class="manifiesto-completo">
-      <summary>Leer el manifiesto completo</summary>
-      <div>
-        <p>De pequeños creamos sin pedir permiso.</p>
-        <p>Cantamos, bailamos, inventamos historias. No nos preguntamos si somos suficientemente buenos. Simplemente hacemos lo que sentimos.</p>
-        <p>Después crecemos.</p>
-        <p>Y empezamos a preocuparnos por lo que pensarán los demás. Por si vamos a tener éxito. Por si estamos perdiendo el tiempo. Por si merece la pena intentarlo.</p>
-        <p>Y poco a poco vamos silenciando a ese niño rebelde que solo quería expresarse y ser él mismo.</p>
-        <p>Pero hay cosas que nunca desaparecen.</p>
-        <p>Esa canción que te pone los pelos de punta. Ese ritmo que te obliga a moverte. Esa necesidad de escribir cuando no encuentras las palabras para explicar lo que te pasa.</p>
-        <p>La música no significa lo mismo para todos.</p>
-        <p>Para algunos es compañía. Para otros, una vía de escape. Para otros, una manera de conectar con el mundo.</p>
-        <p>Y para algunos de nosotros es mucho más que eso.</p>
-        <p class="grande">Es nuestro centro.</p>
-        <p>Yo era un chaval bastante perdido que se pasaba seis horas al día escuchando rap.</p>
-        <p>No tenía muy claro qué quería hacer con mi vida. Me costaba encontrar mi sitio y, durante mucho tiempo, la música fue de las pocas cosas que realmente me llenaban.</p>
-        <p>Me acompañó en momentos difíciles. Y cuando empecé a escribir mis propias canciones, descubrí que también podía ayudarme a expresar todo aquello que llevaba dentro.</p>
-        <p>Con el tiempo, lo que parecía una simple afición acabó dándole un propósito a mi vida.</p>
-        <p>Y tuve la suerte de convertirlo en mi profesión.</p>
-        <p>Pero hay algo que nunca ha cambiado.</p>
-        <p>Sigo siendo aquel chaval que se emociona escuchando una canción, que disfruta creando y que necesita la música para sentirse él mismo.</p>
-        <p>Solo que ahora llevo muchos años aprendiendo, creando y trabajando con otros artistas.</p>
-        <p>Y con el tiempo entendí algo.</p>
-        <p>No quiero dedicar mi vida únicamente a hacer que las canciones suenen mejor.</p>
-        <p>Que también. Y mucho.</p>
-        <p>Quiero ayudar a otras personas a sacar lo que llevan dentro.</p>
-        <p>A perder el miedo a expresarse.</p>
-        <p>A confiar en sus ideas y descubrir de lo que son capaces.</p>
-        <p>A aprender, mejorar y disfrutar del proceso de crear música.</p>
-        <p>A dejar de depender de la aprobación de los demás para sentirse orgullosas de lo que hacen.</p>
-        <p>Porque el éxito no tiene una única forma.</p>
-        <p>Puedes soñar con llenar estadios o simplemente querer terminar esa canción que llevas tanto tiempo imaginando.</p>
-        <p>Lo importante es que lo que hagas te represente.</p>
-        <p>Que puedas escucharlo y sentir que hay algo de ti en cada palabra, en cada nota, en cada decisión.</p>
-        <p>Y que cuando llegue el momento de compartirlo con el mundo, puedas hacerlo con orgullo.</p>
-        <p>Para eso construí Refuge.</p>
-        <p>Un lugar donde tus ideas importan.</p>
-        <p>Donde puedes experimentar, equivocarte, aprender y mejorar.</p>
-        <p>Donde nos tomamos tu música en serio, porque sabemos lo importante que puede llegar a ser para ti.</p>
-        <p>Donde pongo toda mi experiencia, mi criterio y mi compromiso al servicio de lo que quieres crear.</p>
-        <p>No sé qué significa la música en tu vida.</p>
-        <p>Pero sé lo que significa en la mía.</p>
-        <p>Y si algo he aprendido durante todos estos años es que merece la pena apostar por aquello que te hace sentir tú mismo.</p>
-        <p class="grande">No apagues lo que llevas dentro.</p>
-        <p class="grande">Dale una voz. Dale un lugar. Dale vida.</p>
-        <p>Saca lo que llevas dentro. Que suene como tiene que sonar.</p>
-      </div>
-    </details>
-    </div>
-    <figure class="manifiesto-foto"><img decoding="async" src="img/s-capucha.webp" alt="Mano sobre un vinilo en el tocadiscos del estudio" loading="lazy" width="900" height="1125"></figure>
-  </div>
+<section aria-label="Manifiesto" class="manifiesto" id="manifiesto">
+<div class="wrap"><div aria-hidden="true" class="capitulo">02 / LA FILOSOFÍA</div></div>
+<div class="wrap manifiesto-grid">
+<div class="manifiesto-texto">
+<p class="eyebrow eyebrow-claro">Manifiesto</p>
+<blockquote>No dejes de <span>ser tú.</span></blockquote>
+<div class="manifiesto-cuerpo">
+<p>De pequeños creamos sin pedir permiso. Después crecemos, empezamos a preocuparnos por lo que pensarán los demás y poco a poco silenciamos a ese niño rebelde que solo quería expresarse.</p>
+<p>Pero el éxito no tiene una única forma. Puedes soñar con llenar estadios o simplemente querer terminar esa canción que llevas tanto tiempo imaginando. <strong>Lo importante es que lo que hagas te represente.</strong></p>
+</div>
+<details class="manifiesto-completo">
+<summary>Leer el manifiesto completo</summary>
+<div>
+<p>De pequeños creamos sin pedir permiso.</p>
+<p>Cantamos, bailamos, inventamos historias. No nos preguntamos si somos suficientemente buenos. Simplemente hacemos lo que sentimos.</p>
+<p>Después crecemos.</p>
+<p>Y empezamos a preocuparnos por lo que pensarán los demás. Por si vamos a tener éxito. Por si estamos perdiendo el tiempo. Por si merece la pena intentarlo.</p>
+<p>Y poco a poco vamos silenciando a ese niño rebelde que solo quería expresarse y ser él mismo.</p>
+<p>Pero hay cosas que nunca desaparecen.</p>
+<p>Esa canción que te pone los pelos de punta. Ese ritmo que te obliga a moverte. Esa necesidad de escribir cuando no encuentras las palabras para explicar lo que te pasa.</p>
+<p>La música no significa lo mismo para todos.</p>
+<p>Para algunos es compañía. Para otros, una vía de escape. Para otros, una manera de conectar con el mundo.</p>
+<p>Y para algunos de nosotros es mucho más que eso.</p>
+<p class="grande">Es nuestro centro.</p>
+<p>Yo era un chaval bastante perdido que se pasaba seis horas al día escuchando rap.</p>
+<p>No tenía muy claro qué quería hacer con mi vida. Me costaba encontrar mi sitio y, durante mucho tiempo, la música fue de las pocas cosas que realmente me llenaban.</p>
+<p>Me acompañó en momentos difíciles. Y cuando empecé a escribir mis propias canciones, descubrí que también podía ayudarme a expresar todo aquello que llevaba dentro.</p>
+<p>Con el tiempo, lo que parecía una simple afición acabó dándole un propósito a mi vida.</p>
+<p>Y tuve la suerte de convertirlo en mi profesión.</p>
+<p>Pero hay algo que nunca ha cambiado.</p>
+<p>Sigo siendo aquel chaval que se emociona escuchando una canción, que disfruta creando y que necesita la música para sentirse él mismo.</p>
+<p>Solo que ahora llevo muchos años aprendiendo, creando y trabajando con otros artistas.</p>
+<p>Y con el tiempo entendí algo.</p>
+<p>No quiero dedicar mi vida únicamente a hacer que las canciones suenen mejor.</p>
+<p>Que también. Y mucho.</p>
+<p>Quiero ayudar a otras personas a sacar lo que llevan dentro.</p>
+<p>A perder el miedo a expresarse.</p>
+<p>A confiar en sus ideas y descubrir de lo que son capaces.</p>
+<p>A aprender, mejorar y disfrutar del proceso de crear música.</p>
+<p>A dejar de depender de la aprobación de los demás para sentirse orgullosas de lo que hacen.</p>
+<p>Porque el éxito no tiene una única forma.</p>
+<p>Puedes soñar con llenar estadios o simplemente querer terminar esa canción que llevas tanto tiempo imaginando.</p>
+<p>Lo importante es que lo que hagas te represente.</p>
+<p>Que puedas escucharlo y sentir que hay algo de ti en cada palabra, en cada nota, en cada decisión.</p>
+<p>Y que cuando llegue el momento de compartirlo con el mundo, puedas hacerlo con orgullo.</p>
+<p>Para eso construí Refuge.</p>
+<p>Un lugar donde tus ideas importan.</p>
+<p>Donde puedes experimentar, equivocarte, aprender y mejorar.</p>
+<p>Donde nos tomamos tu música en serio, porque sabemos lo importante que puede llegar a ser para ti.</p>
+<p>Donde pongo toda mi experiencia, mi criterio y mi compromiso al servicio de lo que quieres crear.</p>
+<p>No sé qué significa la música en tu vida.</p>
+<p>Pero sé lo que significa en la mía.</p>
+<p>Y si algo he aprendido durante todos estos años es que merece la pena apostar por aquello que te hace sentir tú mismo.</p>
+<p class="grande">No apagues lo que llevas dentro.</p>
+<p class="grande">Dale una voz. Dale un lugar. Dale vida.</p>
+<p>Saca lo que llevas dentro. Que suene como tiene que sonar.</p>
+</div>
+</details>
+</div>
+<figure class="manifiesto-foto"><img alt="Mano sobre un vinilo en el tocadiscos del estudio" decoding="async" height="1125" loading="lazy" src="img/s-capucha.webp" width="900"/></figure>
+</div>
 </section>
 
 <section aria-labelledby="dolor-t">
-  <div class="wrap">
-    <div class="cabecera">
-      <p class="eyebrow">Para artistas con algo que contar</p>
-      <h2 id="dolor-t">Tienes algo dentro <span class="rojo">y no termina de salir.</span></h2>
-    </div>
-    <ul class="dolores">
-      <li>Tienes temas escritos en el cajón y no das el paso de grabarlos.</li>
-      <li>Te da corte entrar en cabina y no sabes cómo se trabaja en un estudio.</li>
-      <li>Tu demo del móvil no suena como la tienes en la cabeza.</li>
-      <li>Has grabado antes y nadie te guió: te dieron un archivo y hasta luego.</li>
-    </ul>
-    <p class="remate">Tú relájate y saca lo que llevas dentro. <span>Del resto me encargo yo.</span></p>
-  </div>
+<div class="wrap">
+<div class="cabecera">
+<p class="eyebrow">Para artistas con algo que contar</p>
+<h2 id="dolor-t">Tienes algo dentro <span class="rojo">y no termina de salir.</span></h2>
+</div>
+<ul class="dolores">
+<li>Tienes temas escritos en el cajón y no das el paso de grabarlos.</li>
+<li>Te da corte entrar en cabina y no sabes cómo se trabaja en un estudio.</li>
+<li>Tu demo del móvil no suena como la tienes en la cabeza.</li>
+<li>Has grabado antes y nadie te guió: te dieron un archivo y hasta luego.</li>
+</ul>
+<p class="remate">Tú relájate y saca lo que llevas dentro. <span>Del resto me encargo yo.</span></p>
+</div>
 </section>
 
-<section id="como" aria-labelledby="como-t" style="padding-top:0">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">03 / EL OFICIO</div>
-    <div class="cabecera">
-      <p class="eyebrow">Cómo trabajo</p>
-      <h2 id="como-t">El oficio de <span class="rojo">toda una vida.</span></h2>
-    </div>
-    <div class="oficio">
-      <article>
-        <h3>El oído</h3>
-        <p>Escucho esta música desde los 12 años. Capto al momento lo que tienes en la cabeza, aunque no sepas explicarlo con palabras técnicas.</p>
-      </article>
-      <article>
-        <h3>Grabo pensando en la mezcla</h3>
-        <p>Desde la primera toma sé qué pistas necesita tu tema y cómo voy a tratar cada una: dobles, adlibs, coros. Te explico el porqué de cada cosa y sales sabiendo más.</p>
-      </article>
-      <article>
-        <h3>Construimos en directo</h3>
-        <p>Voy rápido con el programa y probamos ideas en tiempo real, contigo al lado. El tema crece en la sesión, no en un correo una semana después.</p>
-      </article>
-    </div>
-    <div class="oficio-foto">
-      <img decoding="async" src="img/s-mesa.webp" alt="Adri mezclando en Cubase en el puesto de Refuge" loading="lazy">
-      <img decoding="async" src="img/s-produciendo.webp" alt="Adri produciendo concentrado en su puesto, con el teclado y los monitores bajo la luz roja" loading="lazy">
-      <img decoding="async" src="img/s-teclas.webp" alt="Manos sobre el teclado bajo la luz roja del estudio" loading="lazy">
-    </div>
-  </div>
+<section aria-labelledby="como-t" id="como" style="padding-top:0">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">03 / EL OFICIO</div>
+<div class="cabecera">
+<p class="eyebrow">Cómo trabajo</p>
+<h2 id="como-t">El oficio de <span class="rojo">toda una vida.</span></h2>
+</div>
+<div class="oficio">
+<article>
+<h3>El oído</h3>
+<p>Escucho esta música desde los 12 años. Capto al momento lo que tienes en la cabeza, aunque no sepas explicarlo con palabras técnicas.</p>
+</article>
+<article>
+<h3>Grabo pensando en la mezcla</h3>
+<p>Desde la primera toma sé qué pistas necesita tu tema y cómo voy a tratar cada una: dobles, adlibs, coros. Te explico el porqué de cada cosa y sales sabiendo más.</p>
+</article>
+<article>
+<h3>Construimos en directo</h3>
+<p>Voy rápido con el programa y probamos ideas en tiempo real, contigo al lado. El tema crece en la sesión, no en un correo una semana después.</p>
+</article>
+</div>
+<div class="oficio-foto">
+<img alt="Adri mezclando en Cubase en el puesto de Refuge" decoding="async" loading="lazy" src="img/s-mesa.webp"/>
+<img alt="Adri produciendo concentrado en su puesto, con el teclado y los monitores bajo la luz roja" decoding="async" loading="lazy" src="img/s-produciendo.webp"/>
+<img alt="Manos sobre el teclado bajo la luz roja del estudio" decoding="async" loading="lazy" src="img/s-teclas.webp"/>
+</div>
+</div>
 </section>
 
-<aside class="interludio" aria-label="Del impulso al sonido">
-  <div class="interludio-foto" role="img" aria-label="Adri frente a la mesa de sonido en Refuge Sound Record"></div>
-  <div class="wrap interludio-interior">
-    <div class="interludio-tag"><span class="punto-activo" aria-hidden="true"></span> DENTRO DEL REFUGE · 01 / 01</div>
-    <p class="interludio-linea">LO QUE LLEVAS <em>DENTRO</em><br> MERECE <strong>SONAR FUERA.</strong></p>
-    <a class="interludio-link" href="#antes-despues">ESCUCHA EL RESULTADO <span aria-hidden="true">↗</span></a>
-  </div>
+<aside aria-label="Del impulso al sonido" class="interludio">
+<div aria-label="Adri frente a la mesa de sonido en Refuge Sound Record" class="interludio-foto" role="img"></div>
+<div class="wrap interludio-interior">
+<div class="interludio-tag"><span aria-hidden="true" class="punto-activo"></span> DENTRO DEL REFUGE · 01 / 01</div>
+<p class="interludio-linea">LO QUE LLEVAS <em>DENTRO</em><br/> MERECE <strong>SONAR FUERA.</strong></p>
+<a class="interludio-link" href="#antes-despues">ESCUCHA EL RESULTADO <span aria-hidden="true">↗</span></a>
+</div>
 </aside>
-<section class="ab" id="antes-despues" aria-labelledby="ab-t">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">04 / EL SONIDO</div>
-    <div class="cabecera">
-      <p class="eyebrow">Antes y después</p>
-      <h2 id="ab-t">Escucha la <span class="rojo">diferencia.</span></h2>
-      <p class="lead">El mismo fragmento, antes y después de pasar por mis manos. Pulsa play y cambia de versión sin cortar la reproducción.</p>
-    </div>
-    <div class="ab-lista">
-      <div class="ab-card" data-antes="audio/tema1-antes.mp3" data-despues="audio/tema1-master.mp3" data-label="Antes">
-        <header><span class="tema">En la acera</span><span class="artista">GBB · mezcla y master en Refuge</span></header>
-        <div class="ab-switch" role="group" aria-label="Versión"><button type="button" class="bruto" aria-pressed="true">Antes</button><button type="button" class="master" aria-pressed="false">Mezcla y master</button></div>
-        <div class="ab-play"><button type="button" aria-label="Reproducir"><svg viewBox="0 0 24 24"><path d="M7 4l14 8-14 8z"/></svg></button><div class="barra"><i></i></div></div>
-        <p class="ab-estado">Fragmento de 35 segundos</p>
-      </div>
-      <div class="ab-card" data-antes="audio/tema2-antes.mp3" data-despues="audio/tema2-master.mp3" data-label="Antes">
-        <header><span class="tema">Pretensiones</span><span class="artista">Antígona y Karuma · producción, mezcla y master de AdriPuntoEfe</span></header>
-        <div class="ab-switch" role="group" aria-label="Versión"><button type="button" class="bruto" aria-pressed="true">Antes</button><button type="button" class="master" aria-pressed="false">Mezcla y master</button></div>
-        <div class="ab-play"><button type="button" aria-label="Reproducir"><svg viewBox="0 0 24 24"><path d="M7 4l14 8-14 8z"/></svg></button><div class="barra"><i></i></div></div>
-        <p class="ab-estado">Fragmento de 35 segundos</p>
-      </div>
-      <div class="ab-card" data-antes="audio/tema3-antes.mp3" data-despues="audio/tema3-master.mp3" data-label="Antes">
-        <header><span class="tema">Palermo</span><span class="artista">Flako Fabor · mezcla y master en Refuge</span></header>
-        <div class="ab-switch" role="group" aria-label="Versión"><button type="button" class="bruto" aria-pressed="true">Antes</button><button type="button" class="master" aria-pressed="false">Mezcla y master</button></div>
-        <div class="ab-play"><button type="button" aria-label="Reproducir"><svg viewBox="0 0 24 24"><path d="M7 4l14 8-14 8z"/></svg></button><div class="barra"><i></i></div></div>
-        <p class="ab-estado">Fragmento de 35 segundos</p>
-      </div>
-    </div>
-    <p class="ab-nota">Escúchalo con auriculares o en un buen altavoz para notar la diferencia de verdad.</p>
-  </div>
+
+<section aria-labelledby="ab-t" class="ab" id="antes-despues">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">04 / EL SONIDO</div>
+<div class="cabecera">
+<p class="eyebrow">Antes y después</p>
+<h2 id="ab-t">Escucha la <span class="rojo">diferencia.</span></h2>
+<p class="lead">El mismo fragmento, antes y después de pasar por mis manos. Pulsa play y cambia de versión sin cortar la reproducción.</p>
+</div>
+<div class="ab-lista">
+<div class="ab-card" data-antes="audio/tema1-antes.mp3" data-despues="audio/tema1-master.mp3" data-label="Antes">
+<header><span class="tema">En la acera</span><span class="artista">GGB · mezcla y master en Refuge</span></header>
+<div aria-label="Versión" class="ab-switch" role="group"><button aria-pressed="true" class="bruto" type="button">Antes</button><button aria-pressed="false" class="master" type="button">Mezcla y master</button></div>
+<div class="ab-play"><button aria-label="Reproducir" type="button"><svg viewbox="0 0 24 24"><path d="M7 4l14 8-14 8z"></path></svg></button><div class="barra"><i></i></div></div>
+<p class="ab-estado">Fragmento de 35 segundos</p>
+</div>
+<div class="ab-card" data-antes="audio/tema2-antes.mp3" data-despues="audio/tema2-master.mp3" data-label="Antes">
+<header><span class="tema">Pretensiones</span><span class="artista">Antígona y Karuma · producción, mezcla y master de AdriPuntoEfe</span></header>
+<div aria-label="Versión" class="ab-switch" role="group"><button aria-pressed="true" class="bruto" type="button">Antes</button><button aria-pressed="false" class="master" type="button">Mezcla y master</button></div>
+<div class="ab-play"><button aria-label="Reproducir" type="button"><svg viewbox="0 0 24 24"><path d="M7 4l14 8-14 8z"></path></svg></button><div class="barra"><i></i></div></div>
+<p class="ab-estado">Fragmento de 35 segundos</p>
+</div>
+<div class="ab-card" data-antes="audio/tema3-antes.mp3" data-despues="audio/tema3-master.mp3" data-label="Antes">
+<header><span class="tema">Palermo</span><span class="artista">Flako Fabor · mezcla y master en Refuge</span></header>
+<div aria-label="Versión" class="ab-switch" role="group"><button aria-pressed="true" class="bruto" type="button">Antes</button><button aria-pressed="false" class="master" type="button">Mezcla y master</button></div>
+<div class="ab-play"><button aria-label="Reproducir" type="button"><svg viewbox="0 0 24 24"><path d="M7 4l14 8-14 8z"></path></svg></button><div class="barra"><i></i></div></div>
+<p class="ab-estado">Fragmento de 35 segundos</p>
+</div>
+</div>
+<p class="ab-nota">Escúchalo con auriculares o en un buen altavoz para notar la diferencia de verdad.</p>
+</div>
 </section>
 
-<section id="testimonios" aria-labelledby="voces-t">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">05 / LAS PERSONAS</div>
-    <div class="cabecera">
-      <p class="eyebrow">Han pasado por el templo</p>
-      <h2 id="voces-t">Entran nerviosos. <span class="rojo">Salen flipando.</span></h2>
-    </div>
-    <div class="voces">
-      <figure class="voz">
-        <blockquote><p>“Implicación en cada proyecto y resultados de calidad excelente en la mezcla y máster. Tu canción sonará potente y limpia.”</p></blockquote>
-        <details><summary>Leer reseña completa</summary><p>Un lugar acogedor y bien acondicionado, con un trato tanto humano como profesional. Implicación en cada proyecto y resultados de calidad excelente en la mezcla y máster, tu canción sonará potente y limpia y acorde al estilo o tipo de música que hagas. Precios adecuados y al alcance de aquellos que quieren tratar su música a otro nivel. 100% recomendable.</p></details>
-        <figcaption><img decoding="async" src="img/t-mahatma-gin.webp" alt="Mahatma Gin" loading="lazy"><span><strong>Mahatma Gin</strong>Naviboom solitario</span></figcaption>
-      </figure>
-      <figure class="voz">
-        <blockquote><p>“Supo entender perfectamente lo que buscaba para mi música. El resultado final superó mis expectativas.”</p></blockquote>
-        <details><summary>Leer reseña completa</summary><p>Experiencia increíble en Refuge Sound. Desde el primer momento Adrián fue súper profesional, atento y supo entender perfectamente lo que buscaba para mi música. Se nota que le pone pasión a lo que hace y cuida muchísimo cada detalle de la producción, grabación y sonido.</p><p>El ambiente del estudio es muy cómodo y hace que puedas trabajar con confianza y sacar lo mejor de ti. El resultado final superó mis expectativas y sin duda volveré a trabajar con Adrián en próximos proyectos.</p><p>100% recomendado para cualquier artista que busque un estudio serio, buen sonido y un productor que realmente se implique en el proyecto. 🔥🎙️</p></details>
-        <figcaption><img decoding="async" src="img/t-artista-2.webp" alt="Gaby" loading="lazy"><span><strong>Gaby</strong>Repetirá en próximos proyectos</span></figcaption>
-      </figure>
-      <figure class="voz">
-        <blockquote><p>“El mejor productor y las ediciones están otro level.”</p></blockquote>
-        <figcaption><img decoding="async" src="img/t-artista-3.webp" alt="El Fara en la cabina de Refuge" loading="lazy"><span><strong>El Fara</strong>Grabó en la cabina de Refuge</span></figcaption>
-      </figure>
-      <figure class="voz">
-        <blockquote><p>“Puede guiarte en cualquier estilo que quieras trabajar. La calidad lleva tu producción a los niveles actuales.”</p></blockquote>
-        <details><summary>Leer reseña completa</summary><p>100% recomendado, Adri es un gran profesional y puede guiarte en cualquier estilo que quieras trabajar, allí demuestra todos sus años de trayectoria. Y la calidad lleva tu producción a los niveles actuales.</p></details>
-        <figcaption><img decoding="async" src="img/t-soul-skv.webp" alt="Soul SKV" loading="lazy"><span><strong>Soul SKV</strong>Se vale soñar</span></figcaption>
-      </figure>
-    </div>
-    <div class="google">
-      <div class="nota"><strong>4,9</strong><div><span class="estrellas">★★★★★</span><small>Valoración de Refuge Sound Record en Google</small><a class="verificadas" href="https://www.google.com/maps?cid=7348037294644583722" target="_blank" rel="noopener">Verificadas en Google <span aria-hidden="true">↗</span></a></div></div>
-      <button type="button" class="btn fantasma" id="leer-resenas">Leer las reseñas</button>
-    </div>
-    <div class="cinta-wrap">
-      <button type="button" class="cinta-btn prev" aria-label="Reseñas anteriores">‹</button>
-      <div class="cinta" id="cinta" tabindex="0" aria-label="Reseñas de Google de Refuge Sound Record">
-        <button type="button" class="resena" data-i="0" data-full="img/resenas/resena-01.webp" aria-label="Ver reseña completa: Espectacular lo de este tío. Los resultados son perfectos, un lujazo."><img decoding="async" src="img/resenas/txt/resena-01.webp" alt="Reseña de Google, 5 estrellas: Espectacular lo de este tío. Los resultados son perfectos, un lujazo." loading="lazy" width="463" height="404"></button>
-        <button type="button" class="resena" data-i="1" data-full="img/resenas/resena-43.webp" aria-label="Ver reseña completa: El templo del sonido en Aragón. Si eres músico y quieres que tu talento suene, no dudes en contar con este estudio."><img decoding="async" src="img/resenas/txt/resena-43.webp" alt="Reseña de Google, 5 estrellas: El templo del sonido en Aragón. Si eres músico y quieres que tu talento suene, no dudes en contar con este estudio." loading="lazy" width="450" height="455"></button>
-        <button type="button" class="resena" data-i="2" data-full="img/resenas/resena-21.webp" aria-label="Ver reseña completa: Adri es un tío genial, que hace que grabar sea dinámico, entretenido y sobre todo divertido. Es buena gente y disfruta haciendo lo que hace, y eso se nota."><img decoding="async" src="img/resenas/txt/resena-21.webp" alt="Reseña de Google, 5 estrellas: Adri es un tío genial, que hace que grabar sea dinámico, entretenido y sobre todo divertido. Es buena gente y disfruta haciendo lo que hace, y eso se nota." loading="lazy" width="430" height="578"></button>
-        <button type="button" class="resena" data-i="3" data-full="img/resenas/resena-02.webp" aria-label="Ver reseña completa: Tremendo el conocimiento y el trato recibido. Sin duda de lo mejorcito que hay."><img decoding="async" src="img/resenas/txt/resena-02.webp" alt="Reseña de Google, 5 estrellas: Tremendo el conocimiento y el trato recibido. Sin duda de lo mejorcito que hay." loading="lazy" width="454" height="374"></button>
-        <button type="button" class="resena" data-i="4" data-full="img/resenas/resena-22.webp" aria-label="Ver reseña completa: Un servicio muy profesional, en un entorno cuidado y cómodo. Un técnico comprometido con lo que hace que mima a sus clientes."><img decoding="async" src="img/resenas/txt/resena-22.webp" alt="Reseña de Google, 5 estrellas: Un servicio muy profesional, en un entorno cuidado y cómodo. Un técnico comprometido con lo que hace que mima a sus clientes." loading="lazy" width="435" height="470"></button>
-        <button type="button" class="resena" data-i="5" data-full="img/resenas/resena-03.webp" aria-label="Ver reseña completa: Un estudio muy profesional y con mucho conocimiento. Yo estaba nervioso y te guía en todo el proceso."><img decoding="async" src="img/resenas/txt/resena-03.webp" alt="Reseña de Google, 5 estrellas: Un estudio muy profesional y con mucho conocimiento. Yo estaba nervioso y te guía en todo el proceso." loading="lazy" width="463" height="424"></button>
-        <button type="button" class="resena" data-i="6" data-full="img/resenas/resena-41.webp" aria-label="Ver reseña completa: Increíble: el mejor productor de Zaragoza. Saca el mejor sonido para tus canciones. Muy profesional."><img decoding="async" src="img/resenas/txt/resena-41.webp" alt="Reseña de Google, 5 estrellas: Increíble: el mejor productor de Zaragoza. Saca el mejor sonido para tus canciones. Muy profesional." loading="lazy" width="478" height="392"></button>
-        <button type="button" class="resena" data-i="7" data-full="img/resenas/resena-23.webp" aria-label="Ver reseña completa: Siempre una profesionalidad brutal y un trato cercano increíble. Resultados que nunca defraudan. Adri es una máquina."><img decoding="async" src="img/resenas/txt/resena-23.webp" alt="Reseña de Google, 5 estrellas: Siempre una profesionalidad brutal y un trato cercano increíble. Resultados que nunca defraudan. Adri es una máquina." loading="lazy" width="474" height="403"></button>
-        <button type="button" class="resena" data-i="8" data-full="img/resenas/resena-04.webp" aria-label="Ver reseña completa: Experiencia de 10. Muy recomendable para grabar tu disco."><img decoding="async" src="img/resenas/txt/resena-04.webp" alt="Reseña de Google, 5 estrellas: Experiencia de 10. Muy recomendable para grabar tu disco." loading="lazy" width="459" height="367"></button>
-        <button type="button" class="resena" data-i="9" data-full="img/resenas/resena-24.webp" aria-label="Ver reseña completa: El productor increíble, muy cercano y profesional. Su habilidad de mastering y de producción es genial."><img decoding="async" src="img/resenas/txt/resena-24.webp" alt="Reseña de Google, 5 estrellas: El productor increíble, muy cercano y profesional. Su habilidad de mastering y de producción es genial." loading="lazy" width="415" height="379"></button>
-        <button type="button" class="resena" data-i="10" data-full="img/resenas/resena-05.webp" aria-label="Ver reseña completa: Un estudio increíble, con un productor musical que vale millones. Se lo recomiendo a todo el mundo."><img decoding="async" src="img/resenas/txt/resena-05.webp" alt="Reseña de Google, 5 estrellas: Un estudio increíble, con un productor musical que vale millones. Se lo recomiendo a todo el mundo." loading="lazy" width="417" height="464"></button>
-        <button type="button" class="resena" data-i="11" data-full="img/resenas/resena-25.webp" aria-label="Ver reseña completa: Encantado y agradecido con su trabajo y apoyo. Os recomendaría ir y grabar vuestra música en aquel sitio."><img decoding="async" src="img/resenas/txt/resena-25.webp" alt="Reseña de Google, 5 estrellas: Encantado y agradecido con su trabajo y apoyo. Os recomendaría ir y grabar vuestra música en aquel sitio." loading="lazy" width="428" height="309"></button>
-        <button type="button" class="resena" data-i="12" data-full="img/resenas/resena-06.webp" aria-label="Ver reseña completa: Ya he grabado dos veces en Refuge Sound y puedo decir que es una experiencia absolutamente increíble. Adri siempre te va a ayudar a que el tema salga perfecto."><img decoding="async" src="img/resenas/txt/resena-06.webp" alt="Reseña de Google, 5 estrellas: Ya he grabado dos veces en Refuge Sound y puedo decir que es una experiencia absolutamente increíble. Adri siempre te va a ayudar a que el tema salga perfecto." loading="lazy" width="465" height="573"></button>
-        <button type="button" class="resena" data-i="13" data-full="img/resenas/resena-26.webp" aria-label="Ver reseña completa: Adrián es muy profesional y entiende rápidamente todo lo que le planteo, además de proponer nuevas ideas."><img decoding="async" src="img/resenas/txt/resena-26.webp" alt="Reseña de Google, 5 estrellas: Adrián es muy profesional y entiende rápidamente todo lo que le planteo, además de proponer nuevas ideas." loading="lazy" width="466" height="280"></button>
-        <button type="button" class="resena" data-i="14" data-full="img/resenas/resena-42.webp" aria-label="Ver reseña completa: Increíble sonido y trato familiar. No le hace falta publicidad: se sabe que es el mejor estudio de Zaragoza."><img decoding="async" src="img/resenas/txt/resena-42.webp" alt="Reseña de Google, 5 estrellas: Increíble sonido y trato familiar. No le hace falta publicidad: se sabe que es el mejor estudio de Zaragoza." loading="lazy" width="477" height="399"></button>
-        <button type="button" class="resena" data-i="15" data-full="img/resenas/resena-07.webp" aria-label="Ver reseña completa: He estado varias veces y repetiré seguro. Es rapidísimo y se compromete al 100%. El resultado final, 5 estrellas."><img decoding="async" src="img/resenas/txt/resena-07.webp" alt="Reseña de Google, 5 estrellas: He estado varias veces y repetiré seguro. Es rapidísimo y se compromete al 100%. El resultado final, 5 estrellas." loading="lazy" width="466" height="504"></button>
-        <button type="button" class="resena" data-i="16" data-full="img/resenas/resena-27.webp" aria-label="Ver reseña completa: Trato profesional y un ambiente muy cómodo para el artista. Un placer trabajar con Adri."><img decoding="async" src="img/resenas/txt/resena-27.webp" alt="Reseña de Google, 5 estrellas: Trato profesional y un ambiente muy cómodo para el artista. Un placer trabajar con Adri." loading="lazy" width="472" height="392"></button>
-        <button type="button" class="resena" data-i="17" data-full="img/resenas/resena-08.webp" aria-label="Ver reseña completa: Trato y resultados de gran calidad. Recomendado 100x100."><img decoding="async" src="img/resenas/txt/resena-08.webp" alt="Reseña de Google, 5 estrellas: Trato y resultados de gran calidad. Recomendado 100x100." loading="lazy" width="418" height="367"></button>
-        <button type="button" class="resena" data-i="18" data-full="img/resenas/resena-28.webp" aria-label="Ver reseña completa: Qué decir de este lugar, mi segunda casa. Siempre a gusto, bien asesorado y sacando grandes canciones. 6 estrellas."><img decoding="async" src="img/resenas/txt/resena-28.webp" alt="Reseña de Google, 5 estrellas: Qué decir de este lugar, mi segunda casa. Siempre a gusto, bien asesorado y sacando grandes canciones. 6 estrellas." loading="lazy" width="431" height="489"></button>
-        <button type="button" class="resena" data-i="19" data-full="img/resenas/resena-09.webp" aria-label="Ver reseña completa: Es un placer siempre que vas ahí: buen estudio, buena calidad y buen productor. Es un orgullo ir a grabar ahí."><img decoding="async" src="img/resenas/txt/resena-09.webp" alt="Reseña de Google, 5 estrellas: Es un placer siempre que vas ahí: buen estudio, buena calidad y buen productor. Es un orgullo ir a grabar ahí." loading="lazy" width="446" height="538"></button>
-        <button type="button" class="resena" data-i="20" data-full="img/resenas/resena-29.webp" aria-label="Ver reseña completa: Buen estudio donde grabar tus temas con alta calidad. Buen trato, profesionalidad y rapidez en la entrega."><img decoding="async" src="img/resenas/txt/resena-29.webp" alt="Reseña de Google, 5 estrellas: Buen estudio donde grabar tus temas con alta calidad. Buen trato, profesionalidad y rapidez en la entrega." loading="lazy" width="397" height="406"></button>
-        <button type="button" class="resena" data-i="21" data-full="img/resenas/resena-10.webp" aria-label="Ver reseña completa: Trabajo serio y de gran calidad, trato inmejorable."><img decoding="async" src="img/resenas/txt/resena-10.webp" alt="Reseña de Google, 5 estrellas: Trabajo serio y de gran calidad, trato inmejorable." loading="lazy" width="412" height="351"></button>
-        <button type="button" class="resena" data-i="22" data-full="img/resenas/resena-44.webp" aria-label="Ver reseña completa: El lugar perfecto para hacer grabaciones profesionales a un precio competitivo. Totalmente recomendado."><img decoding="async" src="img/resenas/txt/resena-44.webp" alt="Reseña de Google, 5 estrellas: El lugar perfecto para hacer grabaciones profesionales a un precio competitivo. Totalmente recomendado." loading="lazy" width="475" height="385"></button>
-        <button type="button" class="resena" data-i="23" data-full="img/resenas/resena-30.webp" aria-label="Ver reseña completa: Muy buen trato, y muy a gusto siempre que he grabado allí."><img decoding="async" src="img/resenas/txt/resena-30.webp" alt="Reseña de Google, 5 estrellas: Muy buen trato, y muy a gusto siempre que he grabado allí." loading="lazy" width="432" height="354"></button>
-        <button type="button" class="resena" data-i="24" data-full="img/resenas/resena-11.webp" aria-label="Ver reseña completa: Tanto si estás empezando como si llevas tiempo haciendo música, Refuge Sound Record es tu estudio. Cercano, profesional y serio con los trabajos."><img decoding="async" src="img/resenas/txt/resena-11.webp" alt="Reseña de Google, 5 estrellas: Tanto si estás empezando como si llevas tiempo haciendo música, Refuge Sound Record es tu estudio. Cercano, profesional y serio con los trabajos." loading="lazy" width="469" height="540"></button>
-        <button type="button" class="resena" data-i="25" data-full="img/resenas/resena-31.webp" aria-label="Ver reseña completa: Muy buena experiencia. Trato profesional y cercano, el sonido quedó brutal. Repetiré seguro."><img decoding="async" src="img/resenas/txt/resena-31.webp" alt="Reseña de Google, 5 estrellas: Muy buena experiencia. Trato profesional y cercano, el sonido quedó brutal. Repetiré seguro." loading="lazy" width="460" height="382"></button>
-        <button type="button" class="resena" data-i="26" data-full="img/resenas/resena-12.webp" aria-label="Ver reseña completa: Profesionalidad y trato cercano. ¡Repetiremos!"><img decoding="async" src="img/resenas/txt/resena-12.webp" alt="Reseña de Google, 5 estrellas: Profesionalidad y trato cercano. ¡Repetiremos!" loading="lazy" width="372" height="352"></button>
-        <button type="button" class="resena" data-i="27" data-full="img/resenas/resena-32.webp" aria-label="Ver reseña completa: De tantos años haciendo música, el mejor estudio de grabación profesional que conozco y donde grabo todo lo mío."><img decoding="async" src="img/resenas/txt/resena-32.webp" alt="Reseña de Google, 5 estrellas: De tantos años haciendo música, el mejor estudio de grabación profesional que conozco y donde grabo todo lo mío." loading="lazy" width="470" height="340"></button>
-        <button type="button" class="resena" data-i="28" data-full="img/resenas/resena-13.webp" aria-label="Ver reseña completa: Gran profesional con un gusto excelente. El mejor sitio donde puedes ir si te planteas plasmar un temita."><img decoding="async" src="img/resenas/txt/resena-13.webp" alt="Reseña de Google, 5 estrellas: Gran profesional con un gusto excelente. El mejor sitio donde puedes ir si te planteas plasmar un temita." loading="lazy" width="441" height="489"></button>
-        <button type="button" class="resena" data-i="29" data-full="img/resenas/resena-33.webp" aria-label="Ver reseña completa: Tanto el local como el trato profesional de Adrián son increíbles. En mezcla y máster es excelente."><img decoding="async" src="img/resenas/txt/resena-33.webp" alt="Reseña de Google, 5 estrellas: Tanto el local como el trato profesional de Adrián son increíbles. En mezcla y máster es excelente." loading="lazy" width="463" height="411"></button>
-        <button type="button" class="resena" data-i="30" data-full="img/resenas/resena-45.webp" aria-label="Ver reseña completa: Mucha comodidad a la hora de grabar y un trato muy cercano. Resultados que son una pasada."><img decoding="async" src="img/resenas/txt/resena-45.webp" alt="Reseña de Google, 5 estrellas: Mucha comodidad a la hora de grabar y un trato muy cercano. Resultados que son una pasada." loading="lazy" width="469" height="399"></button>
-        <button type="button" class="resena" data-i="31" data-full="img/resenas/resena-14.webp" aria-label="Ver reseña completa: Muy buen profesional, totalmente recomendable."><img decoding="async" src="img/resenas/txt/resena-14.webp" alt="Reseña de Google, 5 estrellas: Muy buen profesional, totalmente recomendable." loading="lazy" width="417" height="346"></button>
-        <button type="button" class="resena" data-i="32" data-full="img/resenas/resena-34.webp" aria-label="Ver reseña completa: Un trato estupendo, te hace sentirte en tu propia casa. Un placer trabajar con él."><img decoding="async" src="img/resenas/txt/resena-34.webp" alt="Reseña de Google, 5 estrellas: Un trato estupendo, te hace sentirte en tu propia casa. Un placer trabajar con él." loading="lazy" width="479" height="405"></button>
-        <button type="button" class="resena" data-i="33" data-full="img/resenas/resena-15.webp" aria-label="Ver reseña completa: Es un gustazo meterte al estudio de este hombre. Una persona que se implica con tu música como si fuera suya."><img decoding="async" src="img/resenas/txt/resena-15.webp" alt="Reseña de Google, 5 estrellas: Es un gustazo meterte al estudio de este hombre. Una persona que se implica con tu música como si fuera suya." loading="lazy" width="460" height="575"></button>
-        <button type="button" class="resena" data-i="34" data-full="img/resenas/resena-35.webp" aria-label="Ver reseña completa: El lugar perfecto para grabar tus temas en un ambiente genial, sonido y trato de calidad."><img decoding="async" src="img/resenas/txt/resena-35.webp" alt="Reseña de Google, 5 estrellas: El lugar perfecto para grabar tus temas en un ambiente genial, sonido y trato de calidad." loading="lazy" width="468" height="411"></button>
-        <button type="button" class="resena" data-i="35" data-full="img/resenas/resena-16.webp" aria-label="Ver reseña completa: Excelente todo."><img decoding="async" src="img/resenas/txt/resena-16.webp" alt="Reseña de Google, 5 estrellas: Excelente todo." loading="lazy" width="302" height="313"></button>
-        <button type="button" class="resena" data-i="36" data-full="img/resenas/resena-36.webp" aria-label="Ver reseña completa: Un buen estudio donde puedes grabar tus temas a una velocidad muy alta con buenos resultados. Adri, un gran profesional."><img decoding="async" src="img/resenas/txt/resena-36.webp" alt="Reseña de Google, 5 estrellas: Un buen estudio donde puedes grabar tus temas a una velocidad muy alta con buenos resultados. Adri, un gran profesional." loading="lazy" width="472" height="417"></button>
-        <button type="button" class="resena" data-i="37" data-full="img/resenas/resena-17.webp" aria-label="Ver reseña completa: Un estudio increíble, pero sobre todo la profesionalidad de Adrián. He estado en otros estudios, pero ninguno es comparable."><img decoding="async" src="img/resenas/txt/resena-17.webp" alt="Reseña de Google, 5 estrellas: Un estudio increíble, pero sobre todo la profesionalidad de Adrián. He estado en otros estudios, pero ninguno es comparable." loading="lazy" width="446" height="534"></button>
-        <button type="button" class="resena" data-i="38" data-full="img/resenas/resena-46.webp" aria-label="Ver reseña completa: Serio y muy profesional, un trato exquisito. Totalmente recomendable."><img decoding="async" src="img/resenas/txt/resena-46.webp" alt="Reseña de Google, 5 estrellas: Serio y muy profesional, un trato exquisito. Totalmente recomendable." loading="lazy" width="473" height="374"></button>
-        <button type="button" class="resena" data-i="39" data-full="img/resenas/resena-37.webp" aria-label="Ver reseña completa: Si quieres tomarte las cosas en serio y profesional, este es tu sitio. Profesionalidad con toda la confianza posible."><img decoding="async" src="img/resenas/txt/resena-37.webp" alt="Reseña de Google, 5 estrellas: Si quieres tomarte las cosas en serio y profesional, este es tu sitio. Profesionalidad con toda la confianza posible." loading="lazy" width="462" height="423"></button>
-        <button type="button" class="resena" data-i="40" data-full="img/resenas/resena-18.webp" aria-label="Ver reseña completa: Si necesitas un lugar donde trabajar con profesionales: aquí."><img decoding="async" src="img/resenas/txt/resena-18.webp" alt="Reseña de Google, 5 estrellas: Si necesitas un lugar donde trabajar con profesionales: aquí." loading="lazy" width="440" height="373"></button>
-        <button type="button" class="resena" data-i="41" data-full="img/resenas/resena-38.webp" aria-label="Ver reseña completa: Profesional con todas sus letras. Un estudio recomendable 100% para cualquier nivel. Adri te entiende a la perfección."><img decoding="async" src="img/resenas/txt/resena-38.webp" alt="Reseña de Google, 5 estrellas: Profesional con todas sus letras. Un estudio recomendable 100% para cualquier nivel. Adri te entiende a la perfección." loading="lazy" width="489" height="358"></button>
-        <button type="button" class="resena" data-i="42" data-full="img/resenas/resena-19.webp" aria-label="Ver reseña completa: Un estudio profesional al alcance de cualquier persona. Si grabas rap es tu lugar."><img decoding="async" src="img/resenas/txt/resena-19.webp" alt="Reseña de Google, 5 estrellas: Un estudio profesional al alcance de cualquier persona. Si grabas rap es tu lugar." loading="lazy" width="489" height="632"></button>
-        <button type="button" class="resena" data-i="43" data-full="img/resenas/resena-20.webp" aria-label="Ver reseña completa: Muy profesional, buena calidad y trato cercano. Gracias."><img decoding="async" src="img/resenas/txt/resena-20.webp" alt="Reseña de Google, 5 estrellas: Muy profesional, buena calidad y trato cercano. Gracias." loading="lazy" width="369" height="374"></button>
-        <button type="button" class="resena" data-i="44" data-full="img/resenas/resena-40.webp" aria-label="Ver reseña completa: Muy buen trato y mejor resultado. Gran profesional."><img decoding="async" src="img/resenas/txt/resena-40.webp" alt="Reseña de Google, 5 estrellas: Muy buen trato y mejor resultado. Gran profesional." loading="lazy" width="417" height="363"></button>
-      </div>
-      <button type="button" class="cinta-btn next" aria-label="Más reseñas">›</button>
-    </div>
-    <p class="cinta-nota">45 reseñas reales de Google, todas de 5 estrellas. Pulsa una para verla completa.</p>
-    <div class="visor" id="visor" hidden role="dialog" aria-modal="true" aria-label="Reseña completa">
-      <button type="button" class="visor-cerrar" aria-label="Cerrar">×</button>
-      <button type="button" class="visor-nav prev" aria-label="Reseña anterior">‹</button>
-      <figure class="visor-fig"><img decoding="async" id="visor-img" src="" alt=""><figcaption id="visor-num"></figcaption><a class="btn visor-cta" id="visor-cta" href="#contacto" hidden>Cuéntame tu idea</a></figure>
-      <button type="button" class="visor-nav next" aria-label="Reseña siguiente">›</button>
-    </div>
-  </div>
+<section aria-labelledby="voces-t" id="testimonios">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">05 / LAS PERSONAS</div>
+<div class="cabecera">
+<p class="eyebrow">Han pasado por el templo</p>
+<h2 id="voces-t">Entran nerviosos. <span class="rojo">Salen flipando.</span></h2>
+</div>
+<div class="voces">
+<figure class="voz">
+<blockquote><p>“Implicación en cada proyecto y resultados de calidad excelente en la mezcla y máster. Tu canción sonará potente y limpia.”</p></blockquote>
+<details><summary>Leer reseña completa</summary><p>Un lugar acogedor y bien acondicionado, con un trato tanto humano como profesional. Implicación en cada proyecto y resultados de calidad excelente en la mezcla y máster, tu canción sonará potente y limpia y acorde al estilo o tipo de música que hagas. Precios adecuados y al alcance de aquellos que quieren tratar su música a otro nivel. 100% recomendable.</p></details>
+<figcaption><img alt="Mahatma Gin" decoding="async" loading="lazy" src="img/t-mahatma-gin.webp"/><span><strong>Mahatma Gin</strong>Naviboom solitario</span></figcaption>
+</figure>
+<figure class="voz">
+<blockquote><p>“Supo entender perfectamente lo que buscaba para mi música. El resultado final superó mis expectativas.”</p></blockquote>
+<details><summary>Leer reseña completa</summary><p>Experiencia increíble en Refuge Sound. Desde el primer momento Adrián fue súper profesional, atento y supo entender perfectamente lo que buscaba para mi música. Se nota que le pone pasión a lo que hace y cuida muchísimo cada detalle de la producción, grabación y sonido.</p><p>El ambiente del estudio es muy cómodo y hace que puedas trabajar con confianza y sacar lo mejor de ti. El resultado final superó mis expectativas y sin duda volveré a trabajar con Adrián en próximos proyectos.</p><p>100% recomendado para cualquier artista que busque un estudio serio, buen sonido y un productor que realmente se implique en el proyecto. 🔥🎙️</p></details>
+<figcaption><img alt="Gaby" decoding="async" loading="lazy" src="img/t-artista-2.webp"/><span><strong>Gaby</strong>Repetirá en próximos proyectos</span></figcaption>
+</figure>
+<figure class="voz">
+<blockquote><p>“El mejor productor y las ediciones están otro level.”</p></blockquote>
+<figcaption><img alt="El Fara en la cabina de Refuge" decoding="async" loading="lazy" src="img/t-artista-3.webp"/><span><strong>El Fara</strong>Grabó en la cabina de Refuge</span></figcaption>
+</figure>
+<figure class="voz">
+<blockquote><p>“Puede guiarte en cualquier estilo que quieras trabajar. La calidad lleva tu producción a los niveles actuales.”</p></blockquote>
+<details><summary>Leer reseña completa</summary><p>100% recomendado, Adri es un gran profesional y puede guiarte en cualquier estilo que quieras trabajar, allí demuestra todos sus años de trayectoria. Y la calidad lleva tu producción a los niveles actuales.</p></details>
+<figcaption><img alt="Soul SKV" decoding="async" loading="lazy" src="img/t-soul-skv.webp"/><span><strong>Soul SKV</strong>Se vale soñar</span></figcaption>
+</figure>
+</div>
+<div class="google">
+<div class="nota"><strong>4,9</strong><div><span class="estrellas">★★★★★</span><small>Valoración de Refuge Sound Record en Google</small><a class="verificadas" href="https://www.google.com/maps?cid=7348037294644583722" rel="noopener" target="_blank">Verificadas en Google <span aria-hidden="true">↗</span></a></div></div>
+<button class="btn fantasma" id="leer-resenas" type="button">Leer las reseñas</button>
+</div>
+<div class="cinta-wrap">
+<button aria-label="Reseñas anteriores" class="cinta-btn prev" type="button">‹</button>
+<div aria-label="Reseñas de Google de Refuge Sound Record" class="cinta" id="cinta" tabindex="0">
+<button aria-label="Ver reseña completa: Espectacular lo de este tío. Los resultados son perfectos, un lujazo." class="resena" data-full="img/resenas/resena-01.webp" data-i="0" type="button"><img alt="Reseña de Google, 5 estrellas: Espectacular lo de este tío. Los resultados son perfectos, un lujazo." decoding="async" height="404" loading="lazy" src="img/resenas/txt/resena-01.webp" width="463"/></button>
+<button aria-label="Ver reseña completa: El templo del sonido en Aragón. Si eres músico y quieres que tu talento suene, no dudes en contar con este estudio." class="resena" data-full="img/resenas/resena-43.webp" data-i="1" type="button"><img alt="Reseña de Google, 5 estrellas: El templo del sonido en Aragón. Si eres músico y quieres que tu talento suene, no dudes en contar con este estudio." decoding="async" height="455" loading="lazy" src="img/resenas/txt/resena-43.webp" width="450"/></button>
+<button aria-label="Ver reseña completa: Adri es un tío genial, que hace que grabar sea dinámico, entretenido y sobre todo divertido. Es buena gente y disfruta haciendo lo que hace, y eso se nota." class="resena" data-full="img/resenas/resena-21.webp" data-i="2" type="button"><img alt="Reseña de Google, 5 estrellas: Adri es un tío genial, que hace que grabar sea dinámico, entretenido y sobre todo divertido. Es buena gente y disfruta haciendo lo que hace, y eso se nota." decoding="async" height="578" loading="lazy" src="img/resenas/txt/resena-21.webp" width="430"/></button>
+<button aria-label="Ver reseña completa: Tremendo el conocimiento y el trato recibido. Sin duda de lo mejorcito que hay." class="resena" data-full="img/resenas/resena-02.webp" data-i="3" type="button"><img alt="Reseña de Google, 5 estrellas: Tremendo el conocimiento y el trato recibido. Sin duda de lo mejorcito que hay." decoding="async" height="374" loading="lazy" src="img/resenas/txt/resena-02.webp" width="454"/></button>
+<button aria-label="Ver reseña completa: Un servicio muy profesional, en un entorno cuidado y cómodo. Un técnico comprometido con lo que hace que mima a sus clientes." class="resena" data-full="img/resenas/resena-22.webp" data-i="4" type="button"><img alt="Reseña de Google, 5 estrellas: Un servicio muy profesional, en un entorno cuidado y cómodo. Un técnico comprometido con lo que hace que mima a sus clientes." decoding="async" height="470" loading="lazy" src="img/resenas/txt/resena-22.webp" width="435"/></button>
+<button aria-label="Ver reseña completa: Un estudio muy profesional y con mucho conocimiento. Yo estaba nervioso y te guía en todo el proceso." class="resena" data-full="img/resenas/resena-03.webp" data-i="5" type="button"><img alt="Reseña de Google, 5 estrellas: Un estudio muy profesional y con mucho conocimiento. Yo estaba nervioso y te guía en todo el proceso." decoding="async" height="424" loading="lazy" src="img/resenas/txt/resena-03.webp" width="463"/></button>
+<button aria-label="Ver reseña completa: Increíble: el mejor productor de Zaragoza. Saca el mejor sonido para tus canciones. Muy profesional." class="resena" data-full="img/resenas/resena-41.webp" data-i="6" type="button"><img alt="Reseña de Google, 5 estrellas: Increíble: el mejor productor de Zaragoza. Saca el mejor sonido para tus canciones. Muy profesional." decoding="async" height="392" loading="lazy" src="img/resenas/txt/resena-41.webp" width="478"/></button>
+<button aria-label="Ver reseña completa: Siempre una profesionalidad brutal y un trato cercano increíble. Resultados que nunca defraudan. Adri es una máquina." class="resena" data-full="img/resenas/resena-23.webp" data-i="7" type="button"><img alt="Reseña de Google, 5 estrellas: Siempre una profesionalidad brutal y un trato cercano increíble. Resultados que nunca defraudan. Adri es una máquina." decoding="async" height="403" loading="lazy" src="img/resenas/txt/resena-23.webp" width="474"/></button>
+<button aria-label="Ver reseña completa: Experiencia de 10. Muy recomendable para grabar tu disco." class="resena" data-full="img/resenas/resena-04.webp" data-i="8" type="button"><img alt="Reseña de Google, 5 estrellas: Experiencia de 10. Muy recomendable para grabar tu disco." decoding="async" height="367" loading="lazy" src="img/resenas/txt/resena-04.webp" width="459"/></button>
+<button aria-label="Ver reseña completa: El productor increíble, muy cercano y profesional. Su habilidad de mastering y de producción es genial." class="resena" data-full="img/resenas/resena-24.webp" data-i="9" type="button"><img alt="Reseña de Google, 5 estrellas: El productor increíble, muy cercano y profesional. Su habilidad de mastering y de producción es genial." decoding="async" height="379" loading="lazy" src="img/resenas/txt/resena-24.webp" width="415"/></button>
+<button aria-label="Ver reseña completa: Un estudio increíble, con un productor musical que vale millones. Se lo recomiendo a todo el mundo." class="resena" data-full="img/resenas/resena-05.webp" data-i="10" type="button"><img alt="Reseña de Google, 5 estrellas: Un estudio increíble, con un productor musical que vale millones. Se lo recomiendo a todo el mundo." decoding="async" height="464" loading="lazy" src="img/resenas/txt/resena-05.webp" width="417"/></button>
+<button aria-label="Ver reseña completa: Encantado y agradecido con su trabajo y apoyo. Os recomendaría ir y grabar vuestra música en aquel sitio." class="resena" data-full="img/resenas/resena-25.webp" data-i="11" type="button"><img alt="Reseña de Google, 5 estrellas: Encantado y agradecido con su trabajo y apoyo. Os recomendaría ir y grabar vuestra música en aquel sitio." decoding="async" height="309" loading="lazy" src="img/resenas/txt/resena-25.webp" width="428"/></button>
+<button aria-label="Ver reseña completa: Ya he grabado dos veces en Refuge Sound y puedo decir que es una experiencia absolutamente increíble. Adri siempre te va a ayudar a que el tema salga perfecto." class="resena" data-full="img/resenas/resena-06.webp" data-i="12" type="button"><img alt="Reseña de Google, 5 estrellas: Ya he grabado dos veces en Refuge Sound y puedo decir que es una experiencia absolutamente increíble. Adri siempre te va a ayudar a que el tema salga perfecto." decoding="async" height="573" loading="lazy" src="img/resenas/txt/resena-06.webp" width="465"/></button>
+<button aria-label="Ver reseña completa: Adrián es muy profesional y entiende rápidamente todo lo que le planteo, además de proponer nuevas ideas." class="resena" data-full="img/resenas/resena-26.webp" data-i="13" type="button"><img alt="Reseña de Google, 5 estrellas: Adrián es muy profesional y entiende rápidamente todo lo que le planteo, además de proponer nuevas ideas." decoding="async" height="280" loading="lazy" src="img/resenas/txt/resena-26.webp" width="466"/></button>
+<button aria-label="Ver reseña completa: Increíble sonido y trato familiar. No le hace falta publicidad: se sabe que es el mejor estudio de Zaragoza." class="resena" data-full="img/resenas/resena-42.webp" data-i="14" type="button"><img alt="Reseña de Google, 5 estrellas: Increíble sonido y trato familiar. No le hace falta publicidad: se sabe que es el mejor estudio de Zaragoza." decoding="async" height="399" loading="lazy" src="img/resenas/txt/resena-42.webp" width="477"/></button>
+<button aria-label="Ver reseña completa: He estado varias veces y repetiré seguro. Es rapidísimo y se compromete al 100%. El resultado final, 5 estrellas." class="resena" data-full="img/resenas/resena-07.webp" data-i="15" type="button"><img alt="Reseña de Google, 5 estrellas: He estado varias veces y repetiré seguro. Es rapidísimo y se compromete al 100%. El resultado final, 5 estrellas." decoding="async" height="504" loading="lazy" src="img/resenas/txt/resena-07.webp" width="466"/></button>
+<button aria-label="Ver reseña completa: Trato profesional y un ambiente muy cómodo para el artista. Un placer trabajar con Adri." class="resena" data-full="img/resenas/resena-27.webp" data-i="16" type="button"><img alt="Reseña de Google, 5 estrellas: Trato profesional y un ambiente muy cómodo para el artista. Un placer trabajar con Adri." decoding="async" height="392" loading="lazy" src="img/resenas/txt/resena-27.webp" width="472"/></button>
+<button aria-label="Ver reseña completa: Trato y resultados de gran calidad. Recomendado 100x100." class="resena" data-full="img/resenas/resena-08.webp" data-i="17" type="button"><img alt="Reseña de Google, 5 estrellas: Trato y resultados de gran calidad. Recomendado 100x100." decoding="async" height="367" loading="lazy" src="img/resenas/txt/resena-08.webp" width="418"/></button>
+<button aria-label="Ver reseña completa: Qué decir de este lugar, mi segunda casa. Siempre a gusto, bien asesorado y sacando grandes canciones. 6 estrellas." class="resena" data-full="img/resenas/resena-28.webp" data-i="18" type="button"><img alt="Reseña de Google, 5 estrellas: Qué decir de este lugar, mi segunda casa. Siempre a gusto, bien asesorado y sacando grandes canciones. 6 estrellas." decoding="async" height="489" loading="lazy" src="img/resenas/txt/resena-28.webp" width="431"/></button>
+<button aria-label="Ver reseña completa: Es un placer siempre que vas ahí: buen estudio, buena calidad y buen productor. Es un orgullo ir a grabar ahí." class="resena" data-full="img/resenas/resena-09.webp" data-i="19" type="button"><img alt="Reseña de Google, 5 estrellas: Es un placer siempre que vas ahí: buen estudio, buena calidad y buen productor. Es un orgullo ir a grabar ahí." decoding="async" height="538" loading="lazy" src="img/resenas/txt/resena-09.webp" width="446"/></button>
+<button aria-label="Ver reseña completa: Buen estudio donde grabar tus temas con alta calidad. Buen trato, profesionalidad y rapidez en la entrega." class="resena" data-full="img/resenas/resena-29.webp" data-i="20" type="button"><img alt="Reseña de Google, 5 estrellas: Buen estudio donde grabar tus temas con alta calidad. Buen trato, profesionalidad y rapidez en la entrega." decoding="async" height="406" loading="lazy" src="img/resenas/txt/resena-29.webp" width="397"/></button>
+<button aria-label="Ver reseña completa: Trabajo serio y de gran calidad, trato inmejorable." class="resena" data-full="img/resenas/resena-10.webp" data-i="21" type="button"><img alt="Reseña de Google, 5 estrellas: Trabajo serio y de gran calidad, trato inmejorable." decoding="async" height="351" loading="lazy" src="img/resenas/txt/resena-10.webp" width="412"/></button>
+<button aria-label="Ver reseña completa: El lugar perfecto para hacer grabaciones profesionales a un precio competitivo. Totalmente recomendado." class="resena" data-full="img/resenas/resena-44.webp" data-i="22" type="button"><img alt="Reseña de Google, 5 estrellas: El lugar perfecto para hacer grabaciones profesionales a un precio competitivo. Totalmente recomendado." decoding="async" height="385" loading="lazy" src="img/resenas/txt/resena-44.webp" width="475"/></button>
+<button aria-label="Ver reseña completa: Muy buen trato, y muy a gusto siempre que he grabado allí." class="resena" data-full="img/resenas/resena-30.webp" data-i="23" type="button"><img alt="Reseña de Google, 5 estrellas: Muy buen trato, y muy a gusto siempre que he grabado allí." decoding="async" height="354" loading="lazy" src="img/resenas/txt/resena-30.webp" width="432"/></button>
+<button aria-label="Ver reseña completa: Tanto si estás empezando como si llevas tiempo haciendo música, Refuge Sound Record es tu estudio. Cercano, profesional y serio con los trabajos." class="resena" data-full="img/resenas/resena-11.webp" data-i="24" type="button"><img alt="Reseña de Google, 5 estrellas: Tanto si estás empezando como si llevas tiempo haciendo música, Refuge Sound Record es tu estudio. Cercano, profesional y serio con los trabajos." decoding="async" height="540" loading="lazy" src="img/resenas/txt/resena-11.webp" width="469"/></button>
+<button aria-label="Ver reseña completa: Muy buena experiencia. Trato profesional y cercano, el sonido quedó brutal. Repetiré seguro." class="resena" data-full="img/resenas/resena-31.webp" data-i="25" type="button"><img alt="Reseña de Google, 5 estrellas: Muy buena experiencia. Trato profesional y cercano, el sonido quedó brutal. Repetiré seguro." decoding="async" height="382" loading="lazy" src="img/resenas/txt/resena-31.webp" width="460"/></button>
+<button aria-label="Ver reseña completa: Profesionalidad y trato cercano. ¡Repetiremos!" class="resena" data-full="img/resenas/resena-12.webp" data-i="26" type="button"><img alt="Reseña de Google, 5 estrellas: Profesionalidad y trato cercano. ¡Repetiremos!" decoding="async" height="352" loading="lazy" src="img/resenas/txt/resena-12.webp" width="372"/></button>
+<button aria-label="Ver reseña completa: De tantos años haciendo música, el mejor estudio de grabación profesional que conozco y donde grabo todo lo mío." class="resena" data-full="img/resenas/resena-32.webp" data-i="27" type="button"><img alt="Reseña de Google, 5 estrellas: De tantos años haciendo música, el mejor estudio de grabación profesional que conozco y donde grabo todo lo mío." decoding="async" height="340" loading="lazy" src="img/resenas/txt/resena-32.webp" width="470"/></button>
+<button aria-label="Ver reseña completa: Gran profesional con un gusto excelente. El mejor sitio donde puedes ir si te planteas plasmar un temita." class="resena" data-full="img/resenas/resena-13.webp" data-i="28" type="button"><img alt="Reseña de Google, 5 estrellas: Gran profesional con un gusto excelente. El mejor sitio donde puedes ir si te planteas plasmar un temita." decoding="async" height="489" loading="lazy" src="img/resenas/txt/resena-13.webp" width="441"/></button>
+<button aria-label="Ver reseña completa: Tanto el local como el trato profesional de Adrián son increíbles. En mezcla y máster es excelente." class="resena" data-full="img/resenas/resena-33.webp" data-i="29" type="button"><img alt="Reseña de Google, 5 estrellas: Tanto el local como el trato profesional de Adrián son increíbles. En mezcla y máster es excelente." decoding="async" height="411" loading="lazy" src="img/resenas/txt/resena-33.webp" width="463"/></button>
+<button aria-label="Ver reseña completa: Mucha comodidad a la hora de grabar y un trato muy cercano. Resultados que son una pasada." class="resena" data-full="img/resenas/resena-45.webp" data-i="30" type="button"><img alt="Reseña de Google, 5 estrellas: Mucha comodidad a la hora de grabar y un trato muy cercano. Resultados que son una pasada." decoding="async" height="399" loading="lazy" src="img/resenas/txt/resena-45.webp" width="469"/></button>
+<button aria-label="Ver reseña completa: Muy buen profesional, totalmente recomendable." class="resena" data-full="img/resenas/resena-14.webp" data-i="31" type="button"><img alt="Reseña de Google, 5 estrellas: Muy buen profesional, totalmente recomendable." decoding="async" height="346" loading="lazy" src="img/resenas/txt/resena-14.webp" width="417"/></button>
+<button aria-label="Ver reseña completa: Un trato estupendo, te hace sentirte en tu propia casa. Un placer trabajar con él." class="resena" data-full="img/resenas/resena-34.webp" data-i="32" type="button"><img alt="Reseña de Google, 5 estrellas: Un trato estupendo, te hace sentirte en tu propia casa. Un placer trabajar con él." decoding="async" height="405" loading="lazy" src="img/resenas/txt/resena-34.webp" width="479"/></button>
+<button aria-label="Ver reseña completa: Es un gustazo meterte al estudio de este hombre. Una persona que se implica con tu música como si fuera suya." class="resena" data-full="img/resenas/resena-15.webp" data-i="33" type="button"><img alt="Reseña de Google, 5 estrellas: Es un gustazo meterte al estudio de este hombre. Una persona que se implica con tu música como si fuera suya." decoding="async" height="575" loading="lazy" src="img/resenas/txt/resena-15.webp" width="460"/></button>
+<button aria-label="Ver reseña completa: El lugar perfecto para grabar tus temas en un ambiente genial, sonido y trato de calidad." class="resena" data-full="img/resenas/resena-35.webp" data-i="34" type="button"><img alt="Reseña de Google, 5 estrellas: El lugar perfecto para grabar tus temas en un ambiente genial, sonido y trato de calidad." decoding="async" height="411" loading="lazy" src="img/resenas/txt/resena-35.webp" width="468"/></button>
+<button aria-label="Ver reseña completa: Excelente todo." class="resena" data-full="img/resenas/resena-16.webp" data-i="35" type="button"><img alt="Reseña de Google, 5 estrellas: Excelente todo." decoding="async" height="313" loading="lazy" src="img/resenas/txt/resena-16.webp" width="302"/></button>
+<button aria-label="Ver reseña completa: Un buen estudio donde puedes grabar tus temas a una velocidad muy alta con buenos resultados. Adri, un gran profesional." class="resena" data-full="img/resenas/resena-36.webp" data-i="36" type="button"><img alt="Reseña de Google, 5 estrellas: Un buen estudio donde puedes grabar tus temas a una velocidad muy alta con buenos resultados. Adri, un gran profesional." decoding="async" height="417" loading="lazy" src="img/resenas/txt/resena-36.webp" width="472"/></button>
+<button aria-label="Ver reseña completa: Un estudio increíble, pero sobre todo la profesionalidad de Adrián. He estado en otros estudios, pero ninguno es comparable." class="resena" data-full="img/resenas/resena-17.webp" data-i="37" type="button"><img alt="Reseña de Google, 5 estrellas: Un estudio increíble, pero sobre todo la profesionalidad de Adrián. He estado en otros estudios, pero ninguno es comparable." decoding="async" height="534" loading="lazy" src="img/resenas/txt/resena-17.webp" width="446"/></button>
+<button aria-label="Ver reseña completa: Serio y muy profesional, un trato exquisito. Totalmente recomendable." class="resena" data-full="img/resenas/resena-46.webp" data-i="38" type="button"><img alt="Reseña de Google, 5 estrellas: Serio y muy profesional, un trato exquisito. Totalmente recomendable." decoding="async" height="374" loading="lazy" src="img/resenas/txt/resena-46.webp" width="473"/></button>
+<button aria-label="Ver reseña completa: Si quieres tomarte las cosas en serio y profesional, este es tu sitio. Profesionalidad con toda la confianza posible." class="resena" data-full="img/resenas/resena-37.webp" data-i="39" type="button"><img alt="Reseña de Google, 5 estrellas: Si quieres tomarte las cosas en serio y profesional, este es tu sitio. Profesionalidad con toda la confianza posible." decoding="async" height="423" loading="lazy" src="img/resenas/txt/resena-37.webp" width="462"/></button>
+<button aria-label="Ver reseña completa: Si necesitas un lugar donde trabajar con profesionales: aquí." class="resena" data-full="img/resenas/resena-18.webp" data-i="40" type="button"><img alt="Reseña de Google, 5 estrellas: Si necesitas un lugar donde trabajar con profesionales: aquí." decoding="async" height="373" loading="lazy" src="img/resenas/txt/resena-18.webp" width="440"/></button>
+<button aria-label="Ver reseña completa: Profesional con todas sus letras. Un estudio recomendable 100% para cualquier nivel. Adri te entiende a la perfección." class="resena" data-full="img/resenas/resena-38.webp" data-i="41" type="button"><img alt="Reseña de Google, 5 estrellas: Profesional con todas sus letras. Un estudio recomendable 100% para cualquier nivel. Adri te entiende a la perfección." decoding="async" height="358" loading="lazy" src="img/resenas/txt/resena-38.webp" width="489"/></button>
+<button aria-label="Ver reseña completa: Un estudio profesional al alcance de cualquier persona. Si grabas rap es tu lugar." class="resena" data-full="img/resenas/resena-19.webp" data-i="42" type="button"><img alt="Reseña de Google, 5 estrellas: Un estudio profesional al alcance de cualquier persona. Si grabas rap es tu lugar." decoding="async" height="632" loading="lazy" src="img/resenas/txt/resena-19.webp" width="489"/></button>
+<button aria-label="Ver reseña completa: Muy profesional, buena calidad y trato cercano. Gracias." class="resena" data-full="img/resenas/resena-20.webp" data-i="43" type="button"><img alt="Reseña de Google, 5 estrellas: Muy profesional, buena calidad y trato cercano. Gracias." decoding="async" height="374" loading="lazy" src="img/resenas/txt/resena-20.webp" width="369"/></button>
+<button aria-label="Ver reseña completa: Muy buen trato y mejor resultado. Gran profesional." class="resena" data-full="img/resenas/resena-40.webp" data-i="44" type="button"><img alt="Reseña de Google, 5 estrellas: Muy buen trato y mejor resultado. Gran profesional." decoding="async" height="363" loading="lazy" src="img/resenas/txt/resena-40.webp" width="417"/></button>
+</div>
+<button aria-label="Más reseñas" class="cinta-btn next" type="button">›</button>
+</div>
+<p class="cinta-nota">45 reseñas reales de Google, todas de 5 estrellas. Pulsa una para verla completa.</p>
+<div aria-label="Reseña completa" aria-modal="true" class="visor" hidden="" id="visor" role="dialog">
+<button aria-label="Cerrar" class="visor-cerrar" type="button">×</button>
+<button aria-label="Reseña anterior" class="visor-nav prev" type="button">‹</button>
+<figure class="visor-fig"><img alt="" decoding="async" id="visor-img" src=""/><figcaption id="visor-num"></figcaption><a class="btn visor-cta" hidden="" href="#contacto" id="visor-cta">Cuéntame tu idea</a></figure>
+<button aria-label="Reseña siguiente" class="visor-nav next" type="button">›</button>
+</div>
+</div>
 </section>
 
-<section id="temas" aria-labelledby="temas-t" style="padding-top:0">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">06 / LOS TRABAJOS</div>
-    <div class="cabecera">
-      <p class="eyebrow">Ha salido del templo</p>
-      <h2 id="temas-t">Temas que <span class="rojo">ya suenan.</span></h2>
-      <p class="lead">Una selección de canciones y videoclips de artistas que han trabajado conmigo, y algunos de mis temas como artista.</p>
-    </div>
-    <h3 class="sub">Como artista</h3>
-    <div class="clips clips-3">
-        <a class="clip" href="https://youtu.be/PhYqX_EqWdU" target="_blank" rel="noopener" data-yt="PhYqX_EqWdU">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-roja.webp)"><b>Dead Club</b></span><img decoding="async" src="img/clips/dead-club.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Dead Club</strong><span>AdriPuntoEfe · Prod. Malakkor</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/wdHQ8vJGq9Q" target="_blank" rel="noopener" data-yt="wdHQ8vJGq9Q">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/cabina.webp)"><b>Redención</b></span><img decoding="async" src="img/clips/redencion.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Redención</strong><span>AdriPuntoEfe ft. Teis · Prod. Pacífiko</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/A9OUAYe8gEM" target="_blank" rel="noopener" data-yt="A9OUAYe8gEM">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-rojo.webp)"><b>Sexy Lady</b></span><img decoding="async" src="img/clips/sexy-lady.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Sexy Lady</strong><span>AdriPuntoEfe</span></span>
-        </a>
-    </div>
-    <h3 class="sub">Artistas que han pasado por el templo</h3>
-    <div class="clips" id="clips-templo">
-        <a class="clip" href="https://youtu.be/LVLcuEL-q_A" target="_blank" rel="noopener" data-yt="LVLcuEL-q_A">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro-verde.webp)"><b>¿Lo has escuchado?</b></span><img decoding="async" src="img/clips/lo-has-escuchado.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
-          <span class="clip-txt"><strong>¿Lo has escuchado?</strong><span>Welcom Style</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/UBnPK0q84V8" target="_blank" rel="noopener" data-yt="UBnPK0q84V8">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-control.webp)"><b>Limón y sal</b></span><img decoding="async" src="img/clips/limon-y-sal.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
-          <span class="clip-txt"><strong>Limón y sal</strong><span>Manu Haller · NPC Vol. II</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/id_v-ehZguE" target="_blank" rel="noopener" data-yt="id_v-ehZguE">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/logo-pared.webp)"><b>El Faro</b></span><img decoding="async" src="img/clips/el-faro.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>El Faro</strong><span>Ríos de Tinta Turbia ft. Lázaro TRV</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/4H1FZ8CKv-4" target="_blank" rel="noopener" data-yt="4H1FZ8CKv-4">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-lateral.webp)"><b>Chanchullos</b></span><img decoding="async" src="img/clips/chanchullos.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
-          <span class="clip-txt"><strong>Chanchullos</strong><span>FurElGuti</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/iQ8lXJhrlp4" target="_blank" rel="noopener" data-yt="iQ8lXJhrlp4">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro.webp)"><b>Mars</b></span><img decoding="async" src="img/clips/mars.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Mars</strong><span>Ossian con ElAitor</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/weNmu3TM__g" target="_blank" rel="noopener" data-yt="weNmu3TM__g">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto.webp)"><b>Que ya llegará</b></span><img decoding="async" src="img/clips/que-ya-llegara.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Que ya llegará</strong><span>Sheva Shevchenko · Prod. Príncipe Palanca</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/8CjKQdSvym4" target="_blank" rel="noopener" data-yt="8CjKQdSvym4">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-roja.webp)"><b>Bajo presión</b></span><img decoding="async" src="img/clips/bajo-presion.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Bajo presión</strong><span>Lázaro TRV</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/MfSayllr4tQ" target="_blank" rel="noopener" data-yt="MfSayllr4tQ">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/cabina.webp)"><b>Llámanos Jambos</b></span><img decoding="async" src="img/clips/llamanos-jambos.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Llámanos Jambos</strong><span>Jodidos Jambos</span></span>
-        </a>
-        <a class="clip" href="https://youtu.be/6XsFtoAbWSk" target="_blank" rel="noopener" data-yt="6XsFtoAbWSk">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-rojo.webp)"><b>La petite mort</b></span><img decoding="async" src="img/clips/la-petite-mort.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>La petite mort</strong><span>Manu Haller ft. Itziar</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/c93KjmKFl-Y" target="_blank" rel="noopener" data-yt="c93KjmKFl-Y">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro-verde.webp)"><b>Caravana</b></span><img decoding="async" src="img/clips/caravana.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Caravana</strong><span>Sheva Shevchenko</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/iDbKDYqZs54" target="_blank" rel="noopener" data-yt="iDbKDYqZs54">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-control.webp)"><b>Lírica severa</b></span><img decoding="async" src="img/clips/lirica-severa.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Lírica severa</strong><span>Kados Mansalva</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/Id9GXQNGmx0" target="_blank" rel="noopener" data-yt="Id9GXQNGmx0">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/logo-pared.webp)"><b>Katharsis</b></span><img decoding="async" src="img/clips/katharsis.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Katharsis</strong><span>Cecuene</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/yLG5lttJ95g" target="_blank" rel="noopener" data-yt="yLG5lttJ95g">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-lateral.webp)"><b>Museo a cielo abierto</b></span><img decoding="async" src="img/clips/museo-a-cielo-abierto.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Museo a cielo abierto</strong><span>Juicio Kareado (JK)</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/9YUvvpe0GL0" target="_blank" rel="noopener" data-yt="9YUvvpe0GL0">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro.webp)"><b>Porque sonreír</b></span><img decoding="async" src="img/clips/porque-sonreir.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
-          <span class="clip-txt"><strong>Porque sonreír</strong><span>Ríos de Tinta Turbia</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/jYDSPWzoDO0" target="_blank" rel="noopener" data-yt="jYDSPWzoDO0">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto.webp)"><b>Put your hands up</b></span><img decoding="async" src="img/clips/put-your-hands-up.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Put your hands up</strong><span>Fran K 420</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/kd8_oztdesU" target="_blank" rel="noopener" data-yt="kd8_oztdesU">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-roja.webp)"><b>Positive Vibration</b></span><img decoding="async" src="img/clips/positive-vibration.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Positive Vibration</strong><span>Sheva Shevchenko & Silvallaman ft. Pablo Scratch</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/Wl-ehHOFnWA" target="_blank" rel="noopener" data-yt="Wl-ehHOFnWA">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/cabina.webp)"><b>Ephemeral</b></span><img decoding="async" src="img/clips/ephemeral.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Ephemeral</strong><span>ElPutoDeinis</span></span>
-        </a>
-        <a class="clip extra" href="https://youtu.be/Eg4bw9rlakA" target="_blank" rel="noopener" data-yt="Eg4bw9rlakA">
-          <span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-rojo.webp)"><b>Punto y final</b></span><img decoding="async" src="img/clips/punto-y-final.webp" alt="" loading="lazy" onerror="this.remove()"><span class="clip-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span></span>
-          <span class="clip-txt"><strong>Punto y final</strong><span>Nur Drew</span></span>
-        </a>
-    </div>
-    <button type="button" class="btn fantasma ver-mas" id="ver-mas" aria-expanded="false">Ver todos los temas (18)</button>
-  </div>
+<section aria-labelledby="temas-t" id="temas" style="padding-top:0">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">06 / LOS TRABAJOS</div>
+<div class="cabecera">
+<p class="eyebrow">Ha salido del templo</p>
+<h2 id="temas-t">Temas que <span class="rojo">ya suenan.</span></h2>
+<p class="lead">Una selección de canciones y videoclips de artistas que han trabajado conmigo, y algunos de mis temas como artista.</p>
+</div>
+<h3 class="sub">Como artista</h3>
+<div class="clips clips-3">
+<a class="clip" data-yt="PhYqX_EqWdU" href="https://youtu.be/PhYqX_EqWdU" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-roja.webp)"><b>Dead Club</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/dead-club.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Dead Club</strong><span>AdriPuntoEfe · Prod. Malakkor</span></span>
+</a>
+<a class="clip" data-yt="wdHQ8vJGq9Q" href="https://youtu.be/wdHQ8vJGq9Q" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/cabina.webp)"><b>Redención</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/redencion.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Redención</strong><span>AdriPuntoEfe ft. Teis · Prod. Pacífiko</span></span>
+</a>
+<a class="clip" data-yt="A9OUAYe8gEM" href="https://youtu.be/A9OUAYe8gEM" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-rojo.webp)"><b>Sexy Lady</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/sexy-lady.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Sexy Lady</strong><span>AdriPuntoEfe</span></span>
+</a>
+</div>
+<h3 class="sub">Artistas que han pasado por el templo</h3>
+<div class="clips" id="clips-templo">
+<a class="clip" data-yt="LVLcuEL-q_A" href="https://youtu.be/LVLcuEL-q_A" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro-verde.webp)"><b>¿Lo has escuchado?</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/lo-has-escuchado.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
+<span class="clip-txt"><strong>¿Lo has escuchado?</strong><span>Welcom Style</span></span>
+</a>
+<a class="clip" data-yt="UBnPK0q84V8" href="https://youtu.be/UBnPK0q84V8" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-control.webp)"><b>Limón y sal</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/limon-y-sal.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
+<span class="clip-txt"><strong>Limón y sal</strong><span>Manu Haller · NPC Vol. II</span></span>
+</a>
+<a class="clip" data-yt="id_v-ehZguE" href="https://youtu.be/id_v-ehZguE" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/logo-pared.webp)"><b>El Faro</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/el-faro.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>El Faro</strong><span>Ríos de Tinta Turbia ft. Lázaro TRV</span></span>
+</a>
+<a class="clip" data-yt="4H1FZ8CKv-4" href="https://youtu.be/4H1FZ8CKv-4" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-lateral.webp)"><b>Chanchullos</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/chanchullos.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
+<span class="clip-txt"><strong>Chanchullos</strong><span>FurElGuti</span></span>
+</a>
+<a class="clip" data-yt="iQ8lXJhrlp4" href="https://youtu.be/iQ8lXJhrlp4" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro.webp)"><b>Mars</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/mars.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Mars</strong><span>Ossian con ElAitor</span></span>
+</a>
+<a class="clip" data-yt="weNmu3TM__g" href="https://youtu.be/weNmu3TM__g" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto.webp)"><b>Que ya llegará</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/que-ya-llegara.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Que ya llegará</strong><span>Sheva Shevchenko · Prod. Príncipe Palanca</span></span>
+</a>
+<a class="clip" data-yt="8CjKQdSvym4" href="https://youtu.be/8CjKQdSvym4" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-roja.webp)"><b>Bajo presión</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/bajo-presion.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Bajo presión</strong><span>Lázaro TRV</span></span>
+</a>
+<a class="clip" data-yt="MfSayllr4tQ" href="https://youtu.be/MfSayllr4tQ" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/cabina.webp)"><b>Llámanos Jambos</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/llamanos-jambos.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Llámanos Jambos</strong><span>Jodidos Jambos</span></span>
+</a>
+<a class="clip" data-yt="6XsFtoAbWSk" href="https://youtu.be/6XsFtoAbWSk" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-rojo.webp)"><b>La petite mort</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/la-petite-mort.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>La petite mort</strong><span>Manu Haller ft. Itziar</span></span>
+</a>
+<a class="clip extra" data-yt="c93KjmKFl-Y" href="https://youtu.be/c93KjmKFl-Y" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro-verde.webp)"><b>Caravana</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/caravana.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Caravana</strong><span>Sheva Shevchenko</span></span>
+</a>
+<a class="clip extra" data-yt="iDbKDYqZs54" href="https://youtu.be/iDbKDYqZs54" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-control.webp)"><b>Lírica severa</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/lirica-severa.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Lírica severa</strong><span>Kados Mansalva</span></span>
+</a>
+<a class="clip extra" data-yt="Id9GXQNGmx0" href="https://youtu.be/Id9GXQNGmx0" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/logo-pared.webp)"><b>Katharsis</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/katharsis.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Katharsis</strong><span>Cecuene</span></span>
+</a>
+<a class="clip extra" data-yt="yLG5lttJ95g" href="https://youtu.be/yLG5lttJ95g" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-lateral.webp)"><b>Museo a cielo abierto</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/museo-a-cielo-abierto.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Museo a cielo abierto</strong><span>Juicio Kareado (JK)</span></span>
+</a>
+<a class="clip extra" data-yt="9YUvvpe0GL0" href="https://youtu.be/9YUvvpe0GL0" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/micro.webp)"><b>Porque sonreír</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/porque-sonreir.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span><span class="badge">Prod. AdriPuntoEfe</span></span>
+<span class="clip-txt"><strong>Porque sonreír</strong><span>Ríos de Tinta Turbia</span></span>
+</a>
+<a class="clip extra" data-yt="jYDSPWzoDO0" href="https://youtu.be/jYDSPWzoDO0" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto.webp)"><b>Put your hands up</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/put-your-hands-up.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Put your hands up</strong><span>Fran K 420</span></span>
+</a>
+<a class="clip extra" data-yt="kd8_oztdesU" href="https://youtu.be/kd8_oztdesU" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/sala-roja.webp)"><b>Positive Vibration</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/positive-vibration.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Positive Vibration</strong><span>Sheva Shevchenko &amp; Silvallaman ft. Pablo Scratch</span></span>
+</a>
+<a class="clip extra" data-yt="Wl-ehHOFnWA" href="https://youtu.be/Wl-ehHOFnWA" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/cabina.webp)"><b>Ephemeral</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/ephemeral.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Ephemeral</strong><span>ElPutoDeinis</span></span>
+</a>
+<a class="clip extra" data-yt="Eg4bw9rlakA" href="https://youtu.be/Eg4bw9rlakA" rel="noopener" target="_blank">
+<span class="clip-img"><span class="clip-cover" style="background-image:url(img/puesto-rojo.webp)"><b>Punto y final</b></span><img alt="" decoding="async" loading="lazy" onerror="this.remove()" src="img/clips/punto-y-final.webp"/><span aria-hidden="true" class="clip-play"><svg viewbox="0 0 24 24"><path d="M8 5l12 7-12 7z"></path></svg></span></span>
+<span class="clip-txt"><strong>Punto y final</strong><span>Nur Drew</span></span>
+</a>
+</div>
+<button aria-expanded="false" class="btn fantasma ver-mas" id="ver-mas" type="button">Ver todos los temas (18)</button>
+</div>
 </section>
 
-<section id="templo" aria-labelledby="templo-t" style="padding-top:0">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">07 / EL ESPACIO</div>
-    <div class="cabecera">
-      <p class="eyebrow">🏛 El templo</p>
-      <h2 id="templo-t">Aquí es <span class="rojo">donde ocurre.</span></h2>
-      <p class="lead">Refuge Sound Record. Lo construí con mis manos para que fuera un lugar donde tus ideas importan. <strong>Donde puedes experimentar, equivocarte, aprender y mejorar.</strong> Cabina de voces aislada y sala de mezcla, pensado para que entres, te relajes y grabes.</p>
-    </div>
-    <div class="galeria">
-      <figure class="g-ancha g-alta"><img decoding="async" src="img/sala-roja.webp" alt="Sala de Refuge con luz roja, sofá y mesa de mezclas" loading="lazy"><figcaption>La sala</figcaption></figure>
-      <figure class="g-alta"><img decoding="async" src="img/cabina.webp" alt="Cabina de voces con luz verde y micrófono" loading="lazy"><figcaption>La cabina</figcaption></figure>
-      <figure><img decoding="async" src="img/logo-pared.webp" alt="Cuadro de Refuge Sound Record sobre el tocadiscos y discos" loading="lazy"></figure>
-      <figure><img decoding="async" src="img/micro-verde.webp" alt="Micrófono iluminado en verde dentro de la cabina" loading="lazy"></figure>
-      <figure class="g-ancha"><img decoding="async" src="img/s-espaldas.webp" alt="Adri de espaldas frente a los monitores, con la sala en rojo" loading="lazy"><figcaption>Donde ocurre</figcaption></figure>
-      <figure class="g-ancha"><img decoding="async" src="img/s-faders.webp" alt="Mano moviendo los faders de la mesa con luz verde" loading="lazy"><figcaption>La mezcla</figcaption></figure>
-    </div>
-  </div>
+<section aria-labelledby="templo-t" id="templo" style="padding-top:0">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">07 / EL ESPACIO</div>
+<div class="cabecera">
+<p class="eyebrow">🏛 El templo</p>
+<h2 id="templo-t">Aquí es <span class="rojo">donde ocurre.</span></h2>
+<p class="lead">Refuge Sound Record. Lo construí con mis manos para que fuera un lugar donde tus ideas importan. <strong>Donde puedes experimentar, equivocarte, aprender y mejorar.</strong> Cabina de voces aislada y sala de mezcla, pensado para que entres, te relajes y grabes.</p>
+</div>
+<div class="galeria">
+<figure class="g-ancha g-alta"><img alt="Sala de Refuge con luz roja, sofá y mesa de mezclas" decoding="async" loading="lazy" src="img/sala-roja.webp"/><figcaption>La sala</figcaption></figure>
+<figure class="g-alta"><img alt="Cabina de voces con luz verde y micrófono" decoding="async" loading="lazy" src="img/cabina.webp"/><figcaption>La cabina</figcaption></figure>
+<figure><img alt="Cuadro de Refuge Sound Record sobre el tocadiscos y discos" decoding="async" loading="lazy" src="img/logo-pared.webp"/></figure>
+<figure><img alt="Micrófono iluminado en verde dentro de la cabina" decoding="async" loading="lazy" src="img/micro-verde.webp"/></figure>
+<figure class="g-ancha"><img alt="Adri de espaldas frente a los monitores, con la sala en rojo" decoding="async" loading="lazy" src="img/s-espaldas.webp"/><figcaption>Donde ocurre</figcaption></figure>
+<figure class="g-ancha"><img alt="Mano moviendo los faders de la mesa con luz verde" decoding="async" loading="lazy" src="img/s-faders.webp"/><figcaption>La mezcla</figcaption></figure>
+</div>
+</div>
+<div class="wrap"><p class="lugar-nota"><strong>Estamos en Alfajarín, Zaragoza.</strong> Si vienes desde Zaragoza o un pueblo cercano, escríbeme y te paso la ubicación y la mejor forma de llegar.</p></div>
 </section>
 
-<section id="packs" class="ab" aria-labelledby="packs-t">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">08 / LOS SERVICIOS</div>
-    <div class="cabecera">
-      <p class="eyebrow">Packs</p>
-      <h2 id="packs-t">Tu música tiene un camino. <span class="rojo">Elige cómo empezamos.</span></h2>
-      <p class="lead">Tres formas de crear música conmigo. Si necesitas mentoría, identidad artística o apoyo para lanzar tus temas, también puedes contratarlos por separado.</p>
-    </div>
-    <div class="packs">
-      <article class="pack destacado" id="pack-tema">
-        <span class="tag">El más pedido</span>
-        <span class="verbo">Encender</span>
-        <h3>🎙 Paso por el Templo</h3>
-        <div class="desc"><p class="gancho">Tú traes la canción. Le damos el sonido que merece.</p><p>La trabajamos juntos en cabina, cuidando tu interpretación y cada detalle. Después me encargo de la mezcla y el mastering para que la escuches como la imaginabas.</p></div>
-        <ul>
-          <li>Sesión de grabación guiada en el estudio</li>
-          <li>Te enseño a grabar cada pista (dobles, adlibs, coros) pensando ya en la mezcla</li>
-          <li>Mezcla y master profesional</li>
-          <li>Hasta 2 revisiones</li>
-          <li>Entrega en un máximo de 5 días laborables</li>
-          <li>Master en WAV y MP3</li>
-        </ul>
-        <a class="btn" href="#contacto" data-interes="Grabar un tema (Paso por el Templo)">Hablemos de mi canción →</a>
-      </article>
-      <article class="pack" id="pack-beat">
-        <span class="verbo">Forjar</span>
-        <h3>🔥 Hecho en el Templo</h3>
-        <div class="desc"><p class="gancho">No cualquier beat. Uno que hable tu idioma.</p><p>Construimos una instrumental exclusiva que encaje contigo y con lo que quieres contar. La grabación, la mezcla y el mastering completan el viaje.</p></div>
-        <ul>
-          <li>Beat personalizado hecho para ti, en exclusiva</li>
-          <li>Grabación guiada, mezcla y master</li>
-          <li>Hasta 2 revisiones</li>
-          <li>Master en WAV y MP3</li>
-        </ul>
-        <a class="btn fantasma" href="#contacto" data-interes="Un tema con beat a medida (Hecho en el Templo)">Quiero mi propio sonido →</a>
-      </article>
-      <article class="pack" id="pack-disco">
-        <span class="verbo">Arder</span>
-        <h3>🏛 Residencia en el Templo</h3>
-        <div class="desc"><p class="gancho">Cuando cada canción forma parte de algo más grande.</p><p>Un EP o un disco necesita una dirección, no solo buenas canciones. Ordenamos el proceso y cuidamos el sonido para que todo tenga sentido como una obra.</p></div>
-        <ul>
-          <li>Planificación: orden de temas, sesiones y ritmo de trabajo</li>
-          <li>Grabación, mezcla y master de todos los temas</li>
-          <li>Coherencia de sonido en todo el disco</li>
-          <li>Master final de disco</li>
-          <li>Beats a medida si el proyecto los necesita</li>
-          <li>Orientación inicial para preparar el lanzamiento</li>
+<section aria-labelledby="packs-t" class="ab" id="packs">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">08 / LOS SERVICIOS</div>
+<div class="cabecera">
+<p class="eyebrow">Packs</p>
+<h2 id="packs-t">Tu música tiene un camino. <span class="rojo">Elige cómo empezamos.</span></h2>
+<p class="lead">Tres formas de crear música conmigo. Si necesitas mentoría, identidad artística o apoyo para lanzar tus temas, también puedes contratarlos por separado.</p>
+</div>
+<div class="packs">
+<article class="pack destacado" id="pack-tema">
+<span class="tag">El más pedido</span>
+<span class="verbo">Encender</span>
+<h3>🎙 Paso por el Templo</h3>
+<span class="pack-tipo">Grabación de voces + mezcla + mastering</span>
+<div class="desc"><p class="gancho">Tú traes la instrumental. Yo me encargo de que suene como merece.</p><p>Grabamos las voces en cabina, te acompaño toma a toma y cuido tu interpretación sin cambiar tu esencia. Después trabajo la mezcla y el mastering para que tengas un tema profesional del que sentirte orgulloso.</p><p>¿Es tu primera vez? No tienes que demostrar nada. Te guío durante la sesión.</p></div>
+<ul>
+<li>Sesión de grabación guiada en el estudio</li>
+<li>Te enseño a grabar cada pista (dobles, adlibs, coros) pensando ya en la mezcla</li>
+<li>Mezcla y master profesional</li>
+<li>Hasta 2 revisiones</li>
+<li>Entrega en un máximo de 5 días laborables</li>
+<li>Master en WAV y MP3</li>
+</ul>
+<div class="pack-cta"><a class="btn" data-contacto="paso-por-el-templo" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri%21%20He%20visto%20el%20pack%20Paso%20por%20el%20Templo%20en%20tu%20web.%20Quiero%20grabar%20una%20canci%C3%B3n%20y%20ya%20tengo%20la%20instrumental.%20%C2%BFMe%20cuentas%20c%C3%B3mo%20funciona%20y%20qu%C3%A9%20disponibilidad%20tienes%3F" rel="noopener noreferrer" target="_blank">Consultar fecha por WhatsApp ↗</a><a class="alternativa" data-interes="Grabar un tema (Paso por el Templo)" href="#contacto">Prefiero contar mi idea en el formulario →</a><span class="microcopy">Tu instrumental · Grabación guiada · Mezcla y mastering</span></div>
+</article>
+<article class="pack" id="pack-beat">
+<span class="verbo">Forjar</span>
+<h3>🔥 Hecho en el Templo</h3>
+<span class="pack-tipo">Beat exclusivo + grabación + mezcla + mastering</span>
+<div class="desc"><p class="gancho">No cualquier beat. Uno que hable tu idioma.</p><p>Construimos una instrumental exclusiva que encaje contigo y con lo que quieres contar. La grabación, la mezcla y el mastering completan el viaje.</p></div>
+<ul>
+<li>Beat personalizado hecho para ti, en exclusiva</li>
+<li>Grabación guiada, mezcla y master</li>
+<li>Hasta 2 revisiones</li>
+<li>Master en WAV y MP3</li>
+</ul>
+<div class="pack-cta"><a class="btn fantasma" data-contacto="hecho-en-el-templo" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri%21%20He%20visto%20Hecho%20en%20el%20Templo.%20Me%20interesa%20un%20beat%20personalizado%20y%20grabar%20mi%20canci%C3%B3n%20contigo.%20%C2%BFPodemos%20hablar%20del%20proyecto%20y%20el%20presupuesto%3F" rel="noopener noreferrer" target="_blank">Consultar mi producción ↗</a><a class="alternativa" data-interes="Un tema con beat a medida (Hecho en el Templo)" href="#contacto">Prefiero contar mi idea en el formulario →</a><span class="microcopy">Instrumental creada para tu proyecto · Presupuesto a medida</span></div>
+</article>
+<article class="pack" id="pack-disco">
+<span class="verbo">Arder</span>
+<h3>🏛 Residencia en el Templo</h3>
+<span class="pack-tipo">Proyecto de varias canciones · EP o disco</span>
+<div class="desc"><p class="gancho">Cuando cada canción forma parte de algo más grande.</p><p>Un EP o un disco necesita una dirección, no solo buenas canciones. Ordenamos el proceso y cuidamos el sonido para que todo tenga sentido como una obra.</p></div>
+<ul>
+<li>Planificación: orden de temas, sesiones y ritmo de trabajo</li>
+<li>Grabación, mezcla y master de todos los temas</li>
+<li>Coherencia de sonido en todo el disco</li>
+<li>Master final de disco</li>
+<li>Beats a medida si el proyecto los necesita (presupuesto aparte)</li>
+<li>Orientación inicial para preparar el lanzamiento</li>
 </ul>
 <p class="pack-ampliacion"><strong>¿También necesitas dirección artística?</strong> Podemos trabajar mentoría, identidad o planificación de lanzamiento como servicios complementarios, acordados aparte.</p>
-<a class="btn fantasma" href="#contacto" data-interes="Un EP o disco (Residencia en el Templo)">Hablemos de mi proyecto →</a>
-      </article>
-    </div>
-
-    <div class="servicios-evolucion" id="desarrollo-artistico" aria-labelledby="evolucion-t">
-  <div class="evolucion-intro">
-    <div>
-      <p class="eyebrow">Más allá de una canción</p>
-      <h3 id="evolucion-t">Tu música tiene voz. <span>Que tu proyecto también.</span></h3>
-    </div>
-    <p>Una buena canción importa. Pero también importa qué quieres contar, hacia dónde vas y cómo presentas tu música al mundo. Podemos trabajar esas piezas a tu ritmo.</p>
-  </div>
-  <div class="evolucion-grid">
-    <article class="evolucion-card">
-      <div class="evolucion-cab"><span>01 / EVOLUCIÓN</span><span class="evolucion-signo" aria-hidden="true">✳</span></div>
-      <h4>Mentoría <em>para artistas</em></h4>
-      <p>A veces necesitas algo más que otro tutorial. Escuchamos tu música, aterrizamos tus ideas y trazamos pasos realistas para que puedas avanzar sin perder tu esencia.</p>
-      <a href="#contacto" data-interes="Mentoría para artistas" aria-label="Consultar mentoría para artistas">Hablemos de tu camino <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="evolucion-card">
-      <div class="evolucion-cab"><span>02 / IDENTIDAD</span><span class="evolucion-signo" aria-hidden="true">◈</span></div>
-      <h4>Marca <em>artística</em></h4>
-      <p>Que tu música y tu imagen cuenten la misma historia. Trabajamos tu identidad, el mensaje y una forma de comunicar que se sienta tuya, sin tener que fingir un personaje.</p>
-      <a href="#contacto" data-interes="Identidad y estrategia de marca" aria-label="Consultar estrategia de marca artística">Dale forma a tu identidad <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="evolucion-card">
-      <div class="evolucion-cab"><span>03 / LANZAMIENTO</span><span class="evolucion-signo" aria-hidden="true">↗</span></div>
-      <h4>Distribución <em>digital</em></h4>
-      <p>Publicar no empieza el día que subes el tema. Organizamos fechas, portada, créditos y metadatos, y te ayudo con la subida mediante una distribuidora digital.</p>
-      <a href="#contacto" data-interes="Distribución o lanzamiento digital" aria-label="Consultar lanzamiento y distribución digital">Prepara tu lanzamiento <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
-  <p class="evolucion-nota">No son packs cerrados ni promesas de cifras o playlists. Podemos empezar con una sesión, trabajar un objetivo concreto o plantear un acompañamiento más amplio. Alcance y presupuesto, siempre acordados antes.</p>
+<div class="pack-cta"><a class="btn fantasma" data-contacto="residencia-en-el-templo" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri%21%20He%20visto%20Residencia%20en%20el%20Templo.%20Estoy%20preparando%20varias%20canciones%20%2F%20un%20EP%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20podr%C3%ADamos%20organizarlo%20y%20presupuestarlo." rel="noopener noreferrer" target="_blank">Hablemos de mi EP / disco ↗</a><a class="alternativa" data-interes="Un EP o disco (Residencia en el Templo)" href="#contacto">Prefiero contar mi proyecto en el formulario →</a><span class="microcopy">Sesiones planificadas · Continuidad · Presupuesto personalizado</span></div>
+</article>
+</div>
+<div class="pack-seguimiento"><div><h3>Tu música no termina en una canción.</h3><p>Si ya tienes varios temas escritos, podemos planificar las próximas sesiones a tu ritmo, sin obligarte a grabarlo todo de golpe.</p></div><a data-contacto="continuidad" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri%21%20He%20visto%20Residencia%20en%20el%20Templo.%20Estoy%20preparando%20varias%20canciones%20%2F%20un%20EP%20y%20me%20gustar%C3%ADa%20saber%20c%C3%B3mo%20podr%C3%ADamos%20organizarlo%20y%20presupuestarlo." rel="noopener noreferrer" target="_blank">Cuéntame tu próximo proyecto ↗</a></div>
+<div aria-labelledby="evolucion-t" class="servicios-evolucion" id="desarrollo-artistico">
+<div class="evolucion-intro">
+<div>
+<p class="eyebrow">Más allá de una canción</p>
+<h3 id="evolucion-t">Tu música tiene voz. <span>Que tu proyecto también.</span></h3>
+</div>
+<p>Una buena canción importa. Pero también importa qué quieres contar, hacia dónde vas y cómo presentas tu música al mundo. Podemos trabajar esas piezas a tu ritmo.</p>
+</div>
+<div class="evolucion-grid">
+<article class="evolucion-card">
+<div class="evolucion-cab"><span>01 / EVOLUCIÓN</span><span aria-hidden="true" class="evolucion-signo">✳</span></div>
+<h4>Mentoría <em>para artistas</em></h4>
+<p>A veces necesitas algo más que otro tutorial. Escuchamos tu música, aterrizamos tus ideas y trazamos pasos realistas para que puedas avanzar sin perder tu esencia.</p>
+<a aria-label="Consultar mentoría para artistas" data-interes="Mentoría para artistas" href="#contacto">Hablemos de tu camino <span aria-hidden="true">↗</span></a>
+</article>
+<article class="evolucion-card">
+<div class="evolucion-cab"><span>02 / IDENTIDAD</span><span aria-hidden="true" class="evolucion-signo">◈</span></div>
+<h4>Marca <em>artística</em></h4>
+<p>Que tu música y tu imagen cuenten la misma historia. Trabajamos tu identidad, el mensaje y una forma de comunicar que se sienta tuya, sin tener que fingir un personaje.</p>
+<a aria-label="Consultar estrategia de marca artística" data-interes="Identidad y estrategia de marca" href="#contacto">Dale forma a tu identidad <span aria-hidden="true">↗</span></a>
+</article>
+<article class="evolucion-card">
+<div class="evolucion-cab"><span>03 / LANZAMIENTO</span><span aria-hidden="true" class="evolucion-signo">↗</span></div>
+<h4>Distribución <em>digital</em></h4>
+<p>Publicar no empieza el día que subes el tema. Organizamos fechas, portada, créditos y metadatos, y te ayudo con la subida mediante una distribuidora digital.</p>
+<a aria-label="Consultar lanzamiento y distribución digital" data-interes="Distribución o lanzamiento digital" href="#contacto">Prepara tu lanzamiento <span aria-hidden="true">↗</span></a>
+</article>
+</div>
+<p class="evolucion-nota">No son packs cerrados ni promesas de cifras o playlists. Podemos empezar con una sesión, trabajar un objetivo concreto o plantear un acompañamiento más amplio. Alcance y presupuesto, siempre acordados antes.</p>
 </div>
 <div class="sueltos" id="servicios-puntuales">
-  <div class="sueltos-cabecera"><span class="eyebrow">Servicios técnicos a medida</span><h3>¿Necesitas algo puntual? <span class="rojo">También lo hacemos.</span></h3></div>
-      <ul>
-        <li><strong>Grabación por horas</strong><span>Sesiones de mínimo 2 horas.</span></li>
-        <li><strong>Mezcla y master online</strong><span>Me mandas las pistas por separado y te devuelvo el tema terminado.</span></li>
-        <li><strong>Master online</strong><span>Para temas que ya vienen mezclados.</span></li>
-        <li><strong>Master final de disco</strong><span>Para dar unidad a un trabajo completo.</span></li>
-        <li><strong>Locución y doblaje</strong><span>Voces para anuncios, cuñas de radio, series, películas y videojuegos.</span></li>
-        <li><strong>Reparación de audio</strong><span>Limpio ruidos, clics y fallos de grabaciones que ya tienes.</span></li>
-        <li><strong>Beats</strong><span>Licencias y exclusivas en <a href="https://adripuntoefe1988.github.io/beats/" target="_blank" rel="noopener">mi catálogo</a>.</span></li>
-        <li><strong>Clases de producción musical</strong><span>Aprende a crear tus propios beats.</span></li>
-      </ul>
-    </div>
-  </div>
+<div class="sueltos-cabecera"><span class="eyebrow">Servicios técnicos a medida</span><h3>¿Necesitas algo puntual? <span class="rojo">También lo hacemos.</span></h3></div>
+<ul>
+<li><strong>Grabación por horas</strong><span>Sesiones de mínimo 2 horas.</span></li>
+<li><strong>Mezcla y master online</strong><span>Me mandas las pistas por separado y te devuelvo el tema terminado.</span></li>
+<li><strong>Master online</strong><span>Para temas que ya vienen mezclados.</span></li>
+<li><strong>Master final de disco</strong><span>Para dar unidad a un trabajo completo.</span></li>
+<li><strong>Locución y doblaje</strong><span>Voces para anuncios, cuñas de radio, series, películas y videojuegos.</span></li>
+<li><strong>Reparación de audio</strong><span>Limpio ruidos, clics y fallos de grabaciones que ya tienes.</span></li>
+<li><strong>Beats</strong><span>Licencias y exclusivas en <a href="https://adripuntoefe1988.github.io/beats/" rel="noopener" target="_blank">mi catálogo</a>.</span></li>
+<li><strong>Clases de producción musical</strong><span>Aprende a crear tus propios beats.</span></li>
+</ul>
+</div>
+</div>
 </section>
 
-<section id="beats" aria-labelledby="beats-t">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">09 / LAS IDEAS</div>
-    <div class="beats">
-      <div>
-        <p class="eyebrow">Catálogo de instrumentales</p>
-        <h2 id="beats-t" style="margin-top:16px">¿Buscas <span class="rojo">un beat?</span></h2>
-        <div class="cuerpo">
-          <p>Escucha mis instrumentales y llévate la que encaje con tu tema. Si ninguna es la tuya, la hacemos desde cero en <strong>Hecho en el Templo</strong>.</p>
-        </div>
-        <div class="acciones" style="margin-top:28px">
-          <a class="btn" href="https://adripuntoefe1988.github.io/beats/" target="_blank" rel="noopener">Escuchar el catálogo →</a>
-        </div>
-      </div>
-      <div class="onda" id="onda" aria-hidden="true"></div>
-    </div>
-  </div>
+<section aria-labelledby="beats-t" id="beats">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">09 / LAS IDEAS</div>
+<div class="beats">
+<div>
+<p class="eyebrow">Catálogo de instrumentales</p>
+<h2 id="beats-t" style="margin-top:16px">¿Buscas <span class="rojo">un beat?</span></h2>
+<div class="cuerpo">
+<p>Escucha mis instrumentales y llévate la que encaje con tu tema. Si ninguna es la tuya, la hacemos desde cero en <strong>Hecho en el Templo</strong>.</p>
+</div>
+<div class="acciones" style="margin-top:28px">
+<a class="btn" href="https://adripuntoefe1988.github.io/beats/" rel="noopener" target="_blank">Escuchar el catálogo →</a>
+</div>
+</div>
+<div aria-hidden="true" class="onda" id="onda"></div>
+</div>
+</div>
 </section>
 
-<section class="contacto" id="contacto" aria-labelledby="quiz-t">
-  <div class="wrap">
-<div class="capitulo" aria-hidden="true">10 / EL COMIENZO</div>
-    <div class="cabecera">
-      <p class="eyebrow">Entra al templo</p>
-      <h2 id="quiz-t">¿Lo <span class="rojo">hacemos realidad?</span></h2>
-      <p class="lead">Cuéntame en qué punto estás. Son cinco preguntas cortas y, al terminar, seguimos por WhatsApp. Sin compromiso ni respuestas automáticas.</p>
-    </div>
-    <div class="contacto-grid">
-    <div class="quiz" id="quiz">
-      <div class="progreso"><span id="q-num">01 / 05</span><span class="pista"><i id="q-barra" style="width:20%"></i></span></div>
-      <div id="q-cuerpo"></div>
-      <div class="quiz-pie"><button type="button" class="atras" id="q-atras" hidden>← Pregunta anterior</button><span></span></div>
-    </div>
-    <figure class="contacto-foto"><img decoding="async" src="img/s-contacto.webp" alt="Adri sujetando unos cascos bajo la luz roja del estudio" loading="lazy" width="900" height="1125"></figure>
-    </div>
-    <div class="telefono"><p>¿Prefieres escribir directamente? WhatsApp: <span>657 135 322</span></p><a class="btn wa" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri!%20Vengo%20de%20tu%20web." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.4-.9 2.2 0 .9.4 1.8 1 2.6 1.1 1.6 2.5 2.9 4.2 3.6 1.4.6 2 .6 2.7.5.8-.1 1.5-.6 1.8-1.2.2-.4.2-.9.1-1.2l-.3-.1z"/></svg>Escríbeme por WhatsApp</a><div class="ig-botones" style="margin:0"><a class="btn ig" href="https://www.instagram.com/adripuntoefe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>@adripuntoefe</a><a class="btn ig" href="https://www.instagram.com/refugesound/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>@refugesound</a></div></div>
-  </div>
-</section>
-
-<footer class="pie">
-  <div class="wrap">
-    <div>
-      <p class="lema">Saca lo que llevas dentro.<br><span class="rojo">Que suene como tiene que sonar.</span></p>
-      <p>Grabación, mezcla y master para artistas comprometidos.</p>
-    </div>
-    <div>
-      <h4>Redes</h4>
-      <ul>
-        <li><a href="https://www.instagram.com/adripuntoefe/" target="_blank" rel="noopener">@adripuntoefe</a></li>
-        <li><a href="https://www.instagram.com/refugesound/" target="_blank" rel="noopener">@refugesound</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contacto</h4>
-      <ul>
-        <li><a href="https://wa.me/34657135322" target="_blank" rel="noopener">WhatsApp · 657 135 322</a></li>
-        <li><a href="https://adripuntoefe1988.github.io/beats/" target="_blank" rel="noopener">Catálogo de beats</a></li>
-      </ul>
-    </div>
-    <p class="legal">© ADRI PUNTO EFE PRODUCCIONES · Refuge Sound Record</p>
-  </div>
+<section aria-labelledby="quiz-t" class="contacto" id="contacto">
+<div class="wrap">
+<div aria-hidden="true" class="capitulo">10 / EL COMIENZO</div>
+<div class="cabecera">
+<p class="eyebrow">Entra al templo</p>
+<h2 id="quiz-t">¿Lo <span class="rojo">hacemos realidad?</span></h2>
+<p class="lead">¿Tu idea necesita algo más de contexto? Contéstame cinco preguntas cortas y abrimos WhatsApp con todo preparado. Si lo tienes claro, puedes escribirme directamente.</p>
+</div>
+<div class="contacto-directo"><div><h3>¿Ya sabes lo que quieres grabar?</h3><p>Escríbeme directamente y buscamos un día. Sin formulario, sin compromiso y sin tener que contar lo mismo dos veces.</p></div><a class="btn" data-contacto="contacto-rapido" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri%21%20He%20visto%20tu%20web%20y%20quiero%20contarte%20mi%20idea%20para%20grabar%20en%20Refuge%20Sound.%20%C2%BFHablamos%3F" rel="noopener noreferrer" target="_blank">Abrir WhatsApp ↗</a></div>
+<div class="contacto-grid">
+<div class="quiz" id="quiz">
+<div class="progreso"><span id="q-num">01 / 05</span><span class="pista"><i id="q-barra" style="width:20%"></i></span></div>
+<div id="q-cuerpo"></div>
+<div class="quiz-pie"><button class="atras" hidden="" id="q-atras" type="button">← Pregunta anterior</button><span></span></div>
+</div>
+<figure class="contacto-foto"><img alt="Adri sujetando unos cascos bajo la luz roja del estudio" decoding="async" height="1125" loading="lazy" src="img/s-contacto.webp" width="900"/></figure>
+</div>
+<div class="telefono"><p>¿Prefieres escribir directamente? WhatsApp: <span>657 135 322</span></p><a class="btn wa" href="https://wa.me/34657135322?text=%C2%A1Hola%20Adri!%20Vengo%20de%20tu%20web." rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.4-.9 2.2 0 .9.4 1.8 1 2.6 1.1 1.6 2.5 2.9 4.2 3.6 1.4.6 2 .6 2.7.5.8-.1 1.5-.6 1.8-1.2.2-.4.2-.9.1-1.2l-.3-.1z"></path></svg>Escríbeme por WhatsApp</a><div class="ig-botones" style="margin:0"><a class="btn ig" href="https://www.instagram.com/adripuntoefe/" rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"></path></svg>@adripuntoefe</a><a class="btn ig" href="https://www.instagram.com/refugesound/" rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"></path></svg>@refugesound</a></div></div>
+</div>
+</section><footer class="pie">
+<div class="wrap">
+<div>
+<p class="lema">Saca lo que llevas dentro.<br/><span class="rojo">Que suene como tiene que sonar.</span></p>
+<p>Grabación, mezcla y mastering. Tu primera canción o tu próximo proyecto. Alfajarín · Zaragoza.</p>
+</div>
+<div>
+<h4>Redes</h4>
+<ul>
+<li><a href="https://www.instagram.com/adripuntoefe/" rel="noopener" target="_blank">@adripuntoefe</a></li>
+<li><a href="https://www.instagram.com/refugesound/" rel="noopener" target="_blank">@refugesound</a></li>
+</ul>
+</div>
+<div>
+<h4>Contacto</h4>
+<ul>
+<li><a href="https://wa.me/34657135322" rel="noopener" target="_blank">WhatsApp · 657 135 322</a></li>
+<li><a href="https://adripuntoefe1988.github.io/beats/" rel="noopener" target="_blank">Catálogo de beats</a></li>
+</ul>
+</div>
+<p class="legal">© ADRI PUNTO EFE PRODUCCIONES · Refuge Sound Record</p>
+</div>
 </footer>
-
 <script>
 (function(){
   // Onda decorativa de la sección de beats
@@ -1585,19 +1630,17 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
   pintar();
 })();
 </script>
-
-
-<div class="entrada" id="entrada" role="dialog" aria-modal="true" aria-labelledby="entrada-titulo">
-  <div class="entrada-caja">
-    <span class="entrada-rec"><i></i>REC</span>
-    <p class="entrada-marca" id="entrada-titulo">ADRIPUNTOEFE</p>
-    <p class="entrada-sub">Refuge Sound Record</p>
-    <button type="button" class="entrada-boton" id="entrada-boton"><span class="entrada-eq" aria-hidden="true"><b></b><b></b><b></b></span>Entra al templo</button>
-    <button type="button" class="entrada-silencio" id="entrada-silencio">Entrar sin sonido</button>
-  </div>
+<div aria-labelledby="entrada-titulo" aria-modal="true" class="entrada" id="entrada" role="dialog">
+<div class="entrada-caja">
+<span class="entrada-rec"><i></i>REC</span>
+<p class="entrada-marca" id="entrada-titulo">ADRIPUNTOEFE</p>
+<p class="entrada-sub">Refuge Sound Record</p>
+<button class="entrada-boton" id="entrada-boton" type="button"><span aria-hidden="true" class="entrada-eq"><b></b><b></b><b></b></span>Entra al templo</button>
+<button class="entrada-silencio" id="entrada-silencio" type="button">Entrar sin sonido</button>
+</div>
 </div>
 <script>try{if(sessionStorage.getItem('entrada')==='1'){document.getElementById('entrada').remove();}else{document.documentElement.classList.add('con-entrada');}}catch(e){document.documentElement.classList.add('con-entrada');}</script>
-<button type="button" class="ambiente" id="ambiente" hidden aria-pressed="false" aria-label="Música de ambiente"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="txt">Lofi del templo</span><span class="estado">Off</span></button>
+<button aria-label="Música de ambiente" aria-pressed="false" class="ambiente" hidden="" id="ambiente" type="button"><span aria-hidden="true" class="eq"><i></i><i></i><i></i></span><span class="txt">Lofi del templo</span><span class="estado">Off</span></button>
 <script>
 (function(){
  const nav=document.getElementById('navegacion'), toggle=nav?.querySelector('.menu-toggle'), menu=document.getElementById('nav-links');
@@ -1675,5 +1718,4 @@ html.con-entrada,html.con-entrada body{overflow:hidden}
   document.addEventListener('visibilitychange',function(){ if(document.hidden&&!amb.paused){amb.pause();pintar();amb.__oculto=true;} else if(!document.hidden&&amb.__oculto){amb.__oculto=false;sonar();} });
 })();
 </script>
-</body>
-</html>
+</body></html>
